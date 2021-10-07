@@ -1,0 +1,31 @@
+id: PSCR_LMR2LTE_sip_signaling
+label: sip_signaling
+category: '[PSCR_LMR2LTE]'
+
+parameters:
+-   id: SIP_domain
+    label: SIP domain
+    dtype: string
+-   id: PCSCF_addr
+    label: PCSCF addr
+    dtype: string
+
+
+inputs:
+-   id: msg in
+    domain: message
+    optional: true
+
+outputs:
+-   id: cmd out
+    domain: message
+    optional: true
+
+templates:
+    imports: import PSCR_LMR2LTE
+    make: PSCR_LMR2LTE.sip_signaling(${SIP_domain}, ${PCSCF_addr})
+
+
+#  'file_format' specifies the version of the GRC yml format used in the file
+#  and should usually not be changed.
+file_format: 1

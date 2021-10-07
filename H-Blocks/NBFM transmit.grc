@@ -1,0 +1,444 @@
+options:
+  parameters:
+    author: ''
+    category: '[GRC Hier Blocks]'
+    cmake_opt: ''
+    comment: ''
+    copyright: ''
+    description: ''
+    gen_cmake: 'On'
+    gen_linking: dynamic
+    generate_options: hb
+    hier_block_src_path: '.:'
+    id: NBFMtransmit
+    max_nouts: '0'
+    output_language: python
+    placement: (0,0)
+    qt_qss_theme: ''
+    realtime_scheduling: ''
+    run: 'True'
+    run_command: '{python} -u {filename}'
+    run_options: prompt
+    sizing_mode: fixed
+    thread_safe_setters: ''
+    title: Analog NBFM transmitter
+    window_size: ''
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [33, 11]
+    rotation: 0
+    state: enabled
+
+blocks:
+- name: MaxOutBuf
+  id: variable
+  parameters:
+    comment: ''
+    value: '1024'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1155, 23]
+    rotation: 0
+    state: enabled
+- name: Max_deviation
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: Maximum Deviation (Hz)
+    short_id: ''
+    type: eng_float
+    value: '2500'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [602, 8]
+    rotation: 0
+    state: true
+- name: PSCR_LMR2LTE_opus_rtp_source_0
+  id: PSCR_LMR2LTE_opus_rtp_source
+  parameters:
+    SIP_pw: SIPpw
+    SIP_user: SIPuser
+    affinity: ''
+    alias: ''
+    comment: ''
+    ipv6: 'False'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    port: '0'
+    samprate: audio_samp_rate
+    tx_freq_offset: TxOffset
+    uri: SIPuri
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [232, 428.0]
+    rotation: 0
+    state: true
+- name: SIPpw
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: SIP password
+    short_id: ''
+    type: str
+    value: '""'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [557, 113]
+    rotation: 0
+    state: enabled
+- name: SIPuri
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: SIP URI to call
+    short_id: ''
+    type: str
+    value: '""'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [679, 115]
+    rotation: 0
+    state: enabled
+- name: SIPuser
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: SIP user name
+    short_id: ''
+    type: str
+    value: '""'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [429, 114]
+    rotation: 0
+    state: enabled
+- name: TxOffset
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: Tx Frequency Offset (Hz)
+    short_id: ''
+    type: eng_float
+    value: '0'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [971, 9]
+    rotation: 0
+    state: true
+- name: analog_nbfm_tx_0
+  id: analog_nbfm_tx
+  parameters:
+    affinity: ''
+    alias: ''
+    audio_rate: audio_samp_rate*aud_to_rf
+    comment: ''
+    fh: '-1.0'
+    max_dev: 2.5e3
+    maxoutbuf: MaxOutBuf
+    minoutbuf: '0'
+    quad_rate: audio_samp_rate*aud_to_rf
+    tau: 75e-6
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1064, 228.0]
+    rotation: 0
+    state: enabled
+- name: analog_sig_source_x_0
+  id: analog_sig_source_x
+  parameters:
+    affinity: ''
+    alias: ''
+    amp: '1'
+    comment: 'Frequency Xlator to
+
+      allow for multiple
+
+      channels per SDR'
+    freq: TxOffset
+    maxoutbuf: '2048'
+    minoutbuf: '0'
+    offset: '0'
+    phase: '0'
+    samp_rate: aud_to_rf*audio_samp_rate
+    type: complex
+    waveform: analog.GR_COS_WAVE
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1112, 348.0]
+    rotation: 0
+    state: true
+- name: analog_sig_source_x_0_0
+  id: analog_sig_source_x
+  parameters:
+    affinity: ''
+    alias: ''
+    amp: 0.15*(ctcss>60)
+    comment: "CTCSS encoder levels are usually \nset for 15% of system deviation.\
+      \ \nFor example, in a 5 kHz deviation \nsystem, the CTCSS tone level \nwould\
+      \ normally be set to \n750 Hz deviation."
+    freq: ctcss
+    maxoutbuf: '2048'
+    minoutbuf: '0'
+    offset: '0'
+    phase: '0'
+    samp_rate: audio_samp_rate*aud_to_rf
+    type: float
+    waveform: analog.GR_COS_WAVE
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [69, 208]
+    rotation: 0
+    state: enabled
+- name: aud_to_rf
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: Sample Rate to Audio Rate ratio
+    short_id: ''
+    type: intx
+    value: '21'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [239, 13]
+    rotation: 0
+    state: true
+- name: audio_samp_rate
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: Audio Sample Rate
+    short_id: ''
+    type: intx
+    value: '48000'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [416, 7]
+    rotation: 0
+    state: true
+- name: blocks_add_xx_0
+  id: blocks_add_xx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: MaxOutBuf
+    minoutbuf: '0'
+    num_inputs: '2'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [952, 248.0]
+    rotation: 0
+    state: enabled
+- name: blocks_multiply_by_tag_value_cc_0
+  id: blocks_multiply_by_tag_value_cc
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: MaxOutBuf
+    minoutbuf: '0'
+    tagname: udp_data
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1480, 268.0]
+    rotation: 0
+    state: enabled
+- name: blocks_multiply_xx_0
+  id: blocks_multiply_xx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: MaxOutBuf
+    minoutbuf: '0'
+    num_inputs: '2'
+    type: complex
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1352, 264.0]
+    rotation: 0
+    state: true
+- name: ctcss
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: CTCSS Frequency (Hz)
+    short_id: ''
+    type: eng_float
+    value: '0'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [802, 10]
+    rotation: 0
+    state: enabled
+- name: high_pass_filter_0
+  id: high_pass_filter
+  parameters:
+    affinity: ''
+    alias: ''
+    beta: '6.76'
+    comment: "Filter to prevent audio \nfrom interfering with CTCSS\nInterpolation\
+      \ does not work"
+    cutoff_freq: (ctcss>0)*275+25
+    decim: '1'
+    gain: '1'
+    interp: '1'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    samp_rate: audio_samp_rate
+    type: interp_fir_filter_fff
+    width: '25'
+    win: firdes.WIN_HAMMING
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [472, 276.0]
+    rotation: 0
+    state: enabled
+- name: pad_sink_0
+  id: pad_sink
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    label: out
+    num_streams: '1'
+    optional: 'False'
+    type: complex
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1688, 276.0]
+    rotation: 0
+    state: true
+- name: pad_sink_1
+  id: pad_sink
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    label: msg out
+    num_streams: '1'
+    optional: 'True'
+    type: message
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [656, 460.0]
+    rotation: 0
+    state: true
+- name: pad_source_0
+  id: pad_source
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    label: msg in
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    num_streams: '1'
+    optional: 'True'
+    type: message
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [24, 444.0]
+    rotation: 0
+    state: true
+- name: rational_resampler_xxx_0
+  id: rational_resampler_xxx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    decim: '1'
+    fbw: '0.4'
+    interp: aud_to_rf
+    maxoutbuf: MaxOutBuf
+    minoutbuf: '0'
+    taps: ''
+    type: fff
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [688, 300.0]
+    rotation: 0
+    state: enabled
+
+connections:
+- [PSCR_LMR2LTE_opus_rtp_source_0, '0', high_pass_filter_0, '0']
+- [PSCR_LMR2LTE_opus_rtp_source_0, cmd out, pad_sink_1, in]
+- [analog_nbfm_tx_0, '0', blocks_multiply_xx_0, '0']
+- [analog_sig_source_x_0, '0', blocks_multiply_xx_0, '1']
+- [analog_sig_source_x_0_0, '0', blocks_add_xx_0, '0']
+- [blocks_add_xx_0, '0', analog_nbfm_tx_0, '0']
+- [blocks_multiply_by_tag_value_cc_0, '0', pad_sink_0, '0']
+- [blocks_multiply_xx_0, '0', blocks_multiply_by_tag_value_cc_0, '0']
+- [high_pass_filter_0, '0', rational_resampler_xxx_0, '0']
+- [pad_source_0, out, PSCR_LMR2LTE_opus_rtp_source_0, command]
+- [rational_resampler_xxx_0, '0', blocks_add_xx_0, '1']
+
+metadata:
+  file_format: 1

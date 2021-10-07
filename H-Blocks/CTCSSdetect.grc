@@ -1,0 +1,503 @@
+options:
+  parameters:
+    author: ''
+    category: '[GRC Hier Blocks]'
+    cmake_opt: ''
+    comment: ''
+    copyright: ''
+    description: ''
+    gen_cmake: 'On'
+    gen_linking: dynamic
+    generate_options: hb
+    hier_block_src_path: '.:'
+    id: CTCSSdetect
+    max_nouts: '0'
+    output_language: python
+    placement: (0,0)
+    qt_qss_theme: ''
+    realtime_scheduling: ''
+    run: 'True'
+    run_command: '{python} -u {filename}'
+    run_options: prompt
+    sizing_mode: fixed
+    thread_safe_setters: ''
+    title: CTCSS Detection
+    window_size: ''
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [8, 8]
+    rotation: 0
+    state: enabled
+
+blocks:
+- name: MaxOutBuf
+  id: variable
+  parameters:
+    comment: ''
+    value: '1024'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [539, 25]
+    rotation: 0
+    state: enabled
+- name: ctcss_detect
+  id: variable_function_probe
+  parameters:
+    block_id: level
+    comment: Monitors output of argmax
+    function_args: ''
+    function_name: level
+    poll_rate: '1000'
+    value: '0'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1336, 13]
+    rotation: 0
+    state: true
+- name: length
+  id: variable
+  parameters:
+    comment: ''
+    value: int(8*audio_samp_rate/max(50,ctcss))
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [669, 30]
+    rotation: 0
+    state: true
+- name: analog_const_source_x_0
+  id: analog_const_source_x
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: 'Trigger when CTCSS
+
+      is detected'
+    const: ctcss_detect>=2
+    maxoutbuf: '2048'
+    minoutbuf: '0'
+    type: short
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1256, 220.0]
+    rotation: 0
+    state: enabled
+- name: audio_samp_rate
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: Audio Sample Rate
+    short_id: ''
+    type: intx
+    value: '48000'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [353, 7]
+    rotation: 0
+    state: enabled
+- name: blocks_argmax_xx_0
+  id: blocks_argmax_xx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: "When detected CTCSS signal\nis stronger than frequency \nabove or below\
+      \ CTCSS freq\nmax_inp will output 2"
+    maxoutbuf: '2048'
+    minoutbuf: '0'
+    num_inputs: '3'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1112, 288.0]
+    rotation: 0
+    state: enabled
+- name: blocks_burst_tagger_0
+  id: blocks_burst_tagger
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    false_key: squelch_eob
+    false_value: 'True'
+    maxoutbuf: MaxOutBuf
+    minoutbuf: '0'
+    true_key: squelch_sob
+    true_value: 'True'
+    type: float
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1480, 180.0]
+    rotation: 0
+    state: enabled
+- name: blocks_complex_to_mag_0
+  id: blocks_complex_to_mag
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: MaxOutBuf
+    minoutbuf: '0'
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [616, 288.0]
+    rotation: 0
+    state: enabled
+- name: blocks_complex_to_mag_0_0
+  id: blocks_complex_to_mag
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: MaxOutBuf
+    minoutbuf: '0'
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [616, 368.0]
+    rotation: 0
+    state: enabled
+- name: blocks_complex_to_mag_0_0_0
+  id: blocks_complex_to_mag
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: MaxOutBuf
+    minoutbuf: '0'
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [616, 464.0]
+    rotation: 0
+    state: true
+- name: blocks_copy_0
+  id: blocks_copy
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: 'Enable only if
+
+      ctcss   frequency>0'
+    enabled: ctcss>0
+    maxoutbuf: MaxOutBuf
+    minoutbuf: '0'
+    showports: 'False'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [64, 364.0]
+    rotation: 0
+    state: true
+- name: blocks_multiply_xx_0
+  id: blocks_multiply_xx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: MaxOutBuf
+    minoutbuf: '0'
+    num_inputs: '2'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [968, 368.0]
+    rotation: 0
+    state: enabled
+- name: blocks_null_sink_0
+  id: blocks_null_sink
+  parameters:
+    affinity: ''
+    alias: ''
+    bus_structure_sink: '[[0,],]'
+    comment: ''
+    num_inputs: '1'
+    type: short
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1272, 304.0]
+    rotation: 0
+    state: enabled
+- name: blocks_repeat_0
+  id: blocks_repeat
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    interp: length
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    type: short
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1288, 348.0]
+    rotation: 0
+    state: true
+- name: blocks_tag_gate_0
+  id: blocks_tag_gate
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: 'Block tags from power squelch
+
+      which confuses rtp sink'
+    maxoutbuf: MaxOutBuf
+    minoutbuf: '0'
+    propagate_tags: 'False'
+    single_key: '""'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [216, 180.0]
+    rotation: 0
+    state: enabled
+- name: blocks_threshold_ff_1
+  id: blocks_threshold_ff
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: "Prevent false CTCSS \ndetection on noise"
+    high: '0.02'
+    init: '0'
+    low: '0.01'
+    maxoutbuf: MaxOutBuf
+    minoutbuf: '0'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [840, 444.0]
+    rotation: 0
+    state: enabled
+- name: blocks_throttle_1
+  id: blocks_throttle
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    ignoretag: 'True'
+    maxoutbuf: '2048'
+    minoutbuf: '0'
+    samples_per_second: audio_samp_rate
+    type: short
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1488, 348.0]
+    rotation: 0
+    state: true
+- name: ctcss
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: none
+    label: CTCSS Frequency
+    short_id: ''
+    type: eng_float
+    value: '0'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [201, 8]
+    rotation: 0
+    state: true
+- name: goertzel_fc_0
+  id: goertzel_fc
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    freq: max(ctcss,67)*0.98
+    len: length
+    maxoutbuf: MaxOutBuf
+    minoutbuf: '0'
+    rate: audio_samp_rate
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [440, 268.0]
+    rotation: 0
+    state: enabled
+- name: goertzel_fc_0_0
+  id: goertzel_fc
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    freq: max(ctcss,67)*1.02
+    len: length
+    maxoutbuf: MaxOutBuf
+    minoutbuf: '0'
+    rate: audio_samp_rate
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [440, 348.0]
+    rotation: 0
+    state: enabled
+- name: goertzel_fc_0_0_0
+  id: goertzel_fc
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    freq: max(ctcss,67)
+    len: length
+    maxoutbuf: MaxOutBuf
+    minoutbuf: '0'
+    rate: audio_samp_rate
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [440, 444.0]
+    rotation: 0
+    state: true
+- name: level
+  id: blocks_probe_signal_x
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    type: short
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1672, 348.0]
+    rotation: 0
+    state: enabled
+- name: low_pass_filter_0
+  id: low_pass_filter
+  parameters:
+    affinity: ''
+    alias: ''
+    beta: '6.76'
+    comment: ''
+    cutoff_freq: ctcss+50
+    decim: '1'
+    gain: '1'
+    interp: '1'
+    maxoutbuf: '16384'
+    minoutbuf: '0'
+    samp_rate: audio_samp_rate
+    type: fir_filter_fff
+    width: '25'
+    win: firdes.WIN_HAMMING
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [208, 316.0]
+    rotation: 0
+    state: enabled
+- name: pad_sink_0
+  id: pad_sink
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    label: out
+    num_streams: '1'
+    optional: 'False'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1704, 204.0]
+    rotation: 0
+    state: true
+- name: pad_source_0
+  id: pad_source
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    label: in
+    maxoutbuf: MaxOutBuf
+    minoutbuf: '0'
+    num_streams: '1'
+    optional: 'False'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [16, 188.0]
+    rotation: 0
+    state: true
+
+connections:
+- [analog_const_source_x_0, '0', blocks_burst_tagger_0, '1']
+- [blocks_argmax_xx_0, '0', blocks_null_sink_0, '0']
+- [blocks_argmax_xx_0, '1', blocks_repeat_0, '0']
+- [blocks_burst_tagger_0, '0', pad_sink_0, '0']
+- [blocks_complex_to_mag_0, '0', blocks_argmax_xx_0, '0']
+- [blocks_complex_to_mag_0_0, '0', blocks_argmax_xx_0, '1']
+- [blocks_complex_to_mag_0_0_0, '0', blocks_multiply_xx_0, '0']
+- [blocks_complex_to_mag_0_0_0, '0', blocks_threshold_ff_1, '0']
+- [blocks_copy_0, '0', low_pass_filter_0, '0']
+- [blocks_multiply_xx_0, '0', blocks_argmax_xx_0, '2']
+- [blocks_repeat_0, '0', blocks_throttle_1, '0']
+- [blocks_tag_gate_0, '0', blocks_burst_tagger_0, '0']
+- [blocks_threshold_ff_1, '0', blocks_multiply_xx_0, '1']
+- [blocks_throttle_1, '0', level, '0']
+- [goertzel_fc_0, '0', blocks_complex_to_mag_0, '0']
+- [goertzel_fc_0_0, '0', blocks_complex_to_mag_0_0, '0']
+- [goertzel_fc_0_0_0, '0', blocks_complex_to_mag_0_0_0, '0']
+- [low_pass_filter_0, '0', goertzel_fc_0, '0']
+- [low_pass_filter_0, '0', goertzel_fc_0_0, '0']
+- [low_pass_filter_0, '0', goertzel_fc_0_0_0, '0']
+- [pad_source_0, '0', blocks_copy_0, '0']
+- [pad_source_0, '0', blocks_tag_gate_0, '0']
+
+metadata:
+  file_format: 1

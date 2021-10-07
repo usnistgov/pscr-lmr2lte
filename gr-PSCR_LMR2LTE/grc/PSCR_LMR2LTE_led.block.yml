@@ -1,0 +1,74 @@
+id: PSCR_LMR2LTE_led
+label: led
+category: '[PSCR_LMR2LTE]'
+flags: [ show_id ]
+
+parameters:
+-   id: label
+    label: Label
+    dtype: string
+    default: '""'
+    hide: ${ ('none' if len(label) > 0 else 'part') }
+-   id: position
+    label: Label Position
+    dtype: enum
+    default: '1'
+    options: ['1', '2', '3', '4']
+    option_labels: ['Above', 'Below', 'Left', 'Right']
+    hide: 'part'
+-   id: color
+    label: Color
+    dtype: enum
+    default: 'green'
+    options: ['silver', 'gray', 'black', 'white', 'red', 'green', 'blue', 'navy', 'yellow', 'orange', 'purple', 'lime', 'aqua', 'teal', 'transparent']
+    option_labels: ['silver', 'gray', 'black', 'white', 'red', 'green', 'blue', 'navy', 'yellow', 'orange', 'purple', 'lime', 'aqua', 'teal', 'transparent (hidden)']
+    hide: 'part'
+-   id: maxSize
+    label: Size
+    dtype: int
+    default: '40'
+    hide: part
+-   id: cellalignment
+    label: Cell Alignment
+    dtype: enum
+    default: '1'
+    options: ['1','2','3']
+    option_labels: ['Center','Left','Right']
+    hide: part
+-   id: verticalalignment
+    label: Vertical Alignment
+    dtype: enum
+    default: '1'
+    options: ['1','2','3']
+    option_labels: ['Center','Top','Bottom']
+    hide: part
+-   id: gui_hint
+    label: GUI Hint
+    dtype: gui_hint
+    hide: part
+
+inputs:
+-   domain: message
+    id: color
+    optional: true
+
+templates:
+    imports: import PSCR_LMR2LTE
+    make: |-
+        <%
+            win = 'self._%s_win'%id
+        %>\
+        ${win} = PSCR_LMR2LTE.led("${id}", ${label}, "${color}", ${maxSize}, ${position}, ${cellalignment}, ${verticalalignment}, self)
+        self.${id} = ${win}
+        ${gui_hint() % win}
+    callbacks:
+    - setColor(${color})
+
+documentation: |-
+    This block makes a basic LED indicator
+    It can be controlled with a message pair
+    The car of the message must match the label and the cdr supplies the color
+
+#  'file_format' specifies the version of the GRC yml format used in the file
+#  and should usually not be changed.
+file_format: 1

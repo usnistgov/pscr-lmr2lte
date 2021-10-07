@@ -1,0 +1,304 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classata__header" kind="class" language="C++" prot="public">
+    <compoundname>ata_header</compoundname>
+    <includes refid="packet__headers_8h" local="no">packet_headers.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classata__header_1ab422be18f9bd86f66b6772cec2c14904" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ata_header::group</definition>
+        <argsstring></argsstring>
+        <name>group</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/include/PSCR_LMR2LTE/packet_headers.h" line="44" column="13" bodyfile="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/include/PSCR_LMR2LTE/packet_headers.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classata__header_1a09b0e29ddc15adda1044caeccd9cbfaf" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ata_header::version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/include/PSCR_LMR2LTE/packet_headers.h" line="44" column="19" bodyfile="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/include/PSCR_LMR2LTE/packet_headers.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classata__header_1a5c1b6d4530d40b9929e622f69080feab" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ata_header::bitsPerSample</definition>
+        <argsstring></argsstring>
+        <name>bitsPerSample</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/include/PSCR_LMR2LTE/packet_headers.h" line="44" column="27" bodyfile="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/include/PSCR_LMR2LTE/packet_headers.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classata__header_1a4e2e3ae3b21cf7023507b663e4adf01b" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ata_header::binaryPoint</definition>
+        <argsstring></argsstring>
+        <name>binaryPoint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/include/PSCR_LMR2LTE/packet_headers.h" line="44" column="41" bodyfile="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/include/PSCR_LMR2LTE/packet_headers.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classata__header_1aa933cb9dabbf55cd73c6bfb143d4cd3e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t ata_header::order</definition>
+        <argsstring></argsstring>
+        <name>order</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/include/PSCR_LMR2LTE/packet_headers.h" line="45" column="14" bodyfile="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/include/PSCR_LMR2LTE/packet_headers.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classata__header_1add56426a5288fd1c467819bde5a8c446" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ata_header::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/include/PSCR_LMR2LTE/packet_headers.h" line="46" column="13" bodyfile="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/include/PSCR_LMR2LTE/packet_headers.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classata__header_1a17a4b108c97badd02797b57032290036" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ata_header::streams</definition>
+        <argsstring></argsstring>
+        <name>streams</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/include/PSCR_LMR2LTE/packet_headers.h" line="46" column="18" bodyfile="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/include/PSCR_LMR2LTE/packet_headers.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classata__header_1a5d0a2bc3b7a80901b58522871fc3eaf8" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ata_header::polCode</definition>
+        <argsstring></argsstring>
+        <name>polCode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/include/PSCR_LMR2LTE/packet_headers.h" line="46" column="26" bodyfile="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/include/PSCR_LMR2LTE/packet_headers.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classata__header_1ab6c96957b8459125343327e694c15a81" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ata_header::hdrLen</definition>
+        <argsstring></argsstring>
+        <name>hdrLen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/include/PSCR_LMR2LTE/packet_headers.h" line="46" column="34" bodyfile="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/include/PSCR_LMR2LTE/packet_headers.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classata__header_1ae5bdcfd2904158fe690bb513239fdb2c" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t ata_header::src</definition>
+        <argsstring></argsstring>
+        <name>src</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/include/PSCR_LMR2LTE/packet_headers.h" line="47" column="14" bodyfile="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/include/PSCR_LMR2LTE/packet_headers.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classata__header_1aaf24145ace99fe9067f1729dfc47e74f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t ata_header::chan</definition>
+        <argsstring></argsstring>
+        <name>chan</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/include/PSCR_LMR2LTE/packet_headers.h" line="48" column="14" bodyfile="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/include/PSCR_LMR2LTE/packet_headers.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classata__header_1a1daeec91554d65af8bc417284441323d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t ata_header::seq</definition>
+        <argsstring></argsstring>
+        <name>seq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/include/PSCR_LMR2LTE/packet_headers.h" line="49" column="14" bodyfile="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/include/PSCR_LMR2LTE/packet_headers.h" bodystart="49" bodyend="-1"/>
+        <referencedby refid="classata__header_1aa90c0bab95140459ac1207cf0e39c835" compoundref="packet__headers_8h" startline="58" endline="63">ata_header</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classata__header_1ac313af0151aef8dcda121e2475522958" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double ata_header::freq</definition>
+        <argsstring></argsstring>
+        <name>freq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/include/PSCR_LMR2LTE/packet_headers.h" line="50" column="12" bodyfile="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/include/PSCR_LMR2LTE/packet_headers.h" bodystart="50" bodyend="-1"/>
+        <referencedby refid="classata__header_1aa90c0bab95140459ac1207cf0e39c835" compoundref="packet__headers_8h" startline="58" endline="63">ata_header</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classata__header_1a8e4c5f78d8448d3b0cec3e7a229f56a7" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double ata_header::sampleRate</definition>
+        <argsstring></argsstring>
+        <name>sampleRate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/include/PSCR_LMR2LTE/packet_headers.h" line="51" column="12" bodyfile="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/include/PSCR_LMR2LTE/packet_headers.h" bodystart="51" bodyend="-1"/>
+        <referencedby refid="classata__header_1aa90c0bab95140459ac1207cf0e39c835" compoundref="packet__headers_8h" startline="58" endline="63">ata_header</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classata__header_1a6f8404c15449832d7a47890aec6dc4c6" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ata_header::usableFraction</definition>
+        <argsstring></argsstring>
+        <name>usableFraction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/include/PSCR_LMR2LTE/packet_headers.h" line="52" column="11" bodyfile="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/include/PSCR_LMR2LTE/packet_headers.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classata__header_1a130ed12bb6dbaa235c21afb7cae06738" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ata_header::reserved</definition>
+        <argsstring></argsstring>
+        <name>reserved</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/include/PSCR_LMR2LTE/packet_headers.h" line="53" column="11" bodyfile="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/include/PSCR_LMR2LTE/packet_headers.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classata__header_1a5523bb33a45132fe5f83b3b247609dbe" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t ata_header::absTime</definition>
+        <argsstring></argsstring>
+        <name>absTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/include/PSCR_LMR2LTE/packet_headers.h" line="54" column="14" bodyfile="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/include/PSCR_LMR2LTE/packet_headers.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classata__header_1a913e57848a2c9fb872ea108710f50137" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t ata_header::flags</definition>
+        <argsstring></argsstring>
+        <name>flags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/include/PSCR_LMR2LTE/packet_headers.h" line="55" column="14" bodyfile="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/include/PSCR_LMR2LTE/packet_headers.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classata__header_1a79098cb777eada326bfa72747395c141" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t ata_header::len</definition>
+        <argsstring></argsstring>
+        <name>len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/include/PSCR_LMR2LTE/packet_headers.h" line="56" column="14" bodyfile="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/include/PSCR_LMR2LTE/packet_headers.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classata__header_1aa90c0bab95140459ac1207cf0e39c835" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ata_header::ata_header</definition>
+        <argsstring>()</argsstring>
+        <name>ata_header</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/include/PSCR_LMR2LTE/packet_headers.h" line="58" column="5" bodyfile="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/include/PSCR_LMR2LTE/packet_headers.h" bodystart="58" bodyend="63"/>
+        <references refid="classata__header_1ac313af0151aef8dcda121e2475522958" compoundref="packet__headers_8h" startline="50">freq</references>
+        <references refid="classata__header_1a8e4c5f78d8448d3b0cec3e7a229f56a7" compoundref="packet__headers_8h" startline="51">sampleRate</references>
+        <references refid="classata__header_1a1daeec91554d65af8bc417284441323d" compoundref="packet__headers_8h" startline="49">seq</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/include/PSCR_LMR2LTE/packet_headers.h" line="41" column="1" bodyfile="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/include/PSCR_LMR2LTE/packet_headers.h" bodystart="40" bodyend="64"/>
+    <listofallmembers>
+      <member refid="classata__header_1a5523bb33a45132fe5f83b3b247609dbe" prot="public" virt="non-virtual"><scope>ata_header</scope><name>absTime</name></member>
+      <member refid="classata__header_1aa90c0bab95140459ac1207cf0e39c835" prot="public" virt="non-virtual"><scope>ata_header</scope><name>ata_header</name></member>
+      <member refid="classata__header_1a4e2e3ae3b21cf7023507b663e4adf01b" prot="public" virt="non-virtual"><scope>ata_header</scope><name>binaryPoint</name></member>
+      <member refid="classata__header_1a5c1b6d4530d40b9929e622f69080feab" prot="public" virt="non-virtual"><scope>ata_header</scope><name>bitsPerSample</name></member>
+      <member refid="classata__header_1aaf24145ace99fe9067f1729dfc47e74f" prot="public" virt="non-virtual"><scope>ata_header</scope><name>chan</name></member>
+      <member refid="classata__header_1a913e57848a2c9fb872ea108710f50137" prot="public" virt="non-virtual"><scope>ata_header</scope><name>flags</name></member>
+      <member refid="classata__header_1ac313af0151aef8dcda121e2475522958" prot="public" virt="non-virtual"><scope>ata_header</scope><name>freq</name></member>
+      <member refid="classata__header_1ab422be18f9bd86f66b6772cec2c14904" prot="public" virt="non-virtual"><scope>ata_header</scope><name>group</name></member>
+      <member refid="classata__header_1ab6c96957b8459125343327e694c15a81" prot="public" virt="non-virtual"><scope>ata_header</scope><name>hdrLen</name></member>
+      <member refid="classata__header_1a79098cb777eada326bfa72747395c141" prot="public" virt="non-virtual"><scope>ata_header</scope><name>len</name></member>
+      <member refid="classata__header_1aa933cb9dabbf55cd73c6bfb143d4cd3e" prot="public" virt="non-virtual"><scope>ata_header</scope><name>order</name></member>
+      <member refid="classata__header_1a5d0a2bc3b7a80901b58522871fc3eaf8" prot="public" virt="non-virtual"><scope>ata_header</scope><name>polCode</name></member>
+      <member refid="classata__header_1a130ed12bb6dbaa235c21afb7cae06738" prot="public" virt="non-virtual"><scope>ata_header</scope><name>reserved</name></member>
+      <member refid="classata__header_1a8e4c5f78d8448d3b0cec3e7a229f56a7" prot="public" virt="non-virtual"><scope>ata_header</scope><name>sampleRate</name></member>
+      <member refid="classata__header_1a1daeec91554d65af8bc417284441323d" prot="public" virt="non-virtual"><scope>ata_header</scope><name>seq</name></member>
+      <member refid="classata__header_1ae5bdcfd2904158fe690bb513239fdb2c" prot="public" virt="non-virtual"><scope>ata_header</scope><name>src</name></member>
+      <member refid="classata__header_1a17a4b108c97badd02797b57032290036" prot="public" virt="non-virtual"><scope>ata_header</scope><name>streams</name></member>
+      <member refid="classata__header_1add56426a5288fd1c467819bde5a8c446" prot="public" virt="non-virtual"><scope>ata_header</scope><name>type</name></member>
+      <member refid="classata__header_1a6f8404c15449832d7a47890aec6dc4c6" prot="public" virt="non-virtual"><scope>ata_header</scope><name>usableFraction</name></member>
+      <member refid="classata__header_1a09b0e29ddc15adda1044caeccd9cbfaf" prot="public" virt="non-virtual"><scope>ata_header</scope><name>version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

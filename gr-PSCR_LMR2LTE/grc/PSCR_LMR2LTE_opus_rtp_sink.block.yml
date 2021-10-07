@@ -1,0 +1,112 @@
+id: PSCR_LMR2LTE_opus_rtp_sink
+label: opus_rtp_sink
+category: '[PSCR_LMR2LTE]'
+
+templates:
+  imports: import PSCR_LMR2LTE
+  make: |-
+    PSCR_LMR2LTE.opus_rtp_sink(${addr}, ${rport}, ${lport}, ${samprate})
+    self.${id}.set_chan(${rx_freq_offset}, ${SIP_user}, ${SIP_pw},${uri})
+
+#  Make one 'parameters' list entry for every parameter you want settable from the GUI.
+#     Keys include:
+#     * id (makes the value accessible as \$keyname, e.g. in the make entry)
+#     * label (label shown in the GUI)
+#     * dtype (e.g. int, float, complex, byte, short, xxx_vector, ...)
+parameters:
+-   id: addr
+    label: Address
+    dtype: string
+    default: 127.0.0.1
+-   id: lport
+    label: Source Port
+    dtype: int
+    default: '16384'
+-   id: rport
+    label: Destination Port
+    dtype: int
+    default: '16384'
+-   id: samprate
+    label: Sample Rate
+    dtype: int
+    default: '48000'
+
+-   id: rx_freq_offset
+    label: Rx Frequency Offset
+    default: 0
+    dtype: float
+    hide: part
+    category: Channel
+-   id: SIP_user
+    label: SIP User Name
+    default: '""'
+    dtype: string
+    hide: part
+    category: Channel
+-   id: SIP_pw
+    label: SIP Password
+    default: '""'
+    dtype: string
+    hide: part
+    category: Channel
+-   id: uri
+    label: URI to call
+    default: '""'
+    dtype: string
+    hide: part
+    category: Channel
+    
+#  Make one 'inputs' list entry per input and one 'outputs' list entry per output.
+#  Keys include:
+#      * label (an identifier for the GUI)
+#      * domain (optional - stream or message. Default is stream)
+#      * dtype (e.g. int, float, complex, byte, short, xxx_vector, ...)
+#      * vlen (optional - data stream vector length. Default is 1)
+#      * optional (optional - set to 1 for optional inputs. Default is 0)
+inputs:
+-   domain: stream
+    dtype: float
+-   domain: message
+    id: command
+    optional: true
+
+outputs:
+- id: squelch
+  domain: message
+  optional: true
+
+asserts:
+- ${ rport >= 0 }
+- ${ rport < 65536 }
+- ${ lport >= 0 }
+- ${ lport < 65536 }
+- ${ samprate == 8000 or samprate == 12000 or samprate == 16000 or samprate == 24000 or samprate == 48000 }
+
+documentation: "This block provides opus encoded RTP transmission capabilities.\n\n\
+    \ Takes a float audio stream and sends opus encoded samples to an IP address.\n\
+    \ The sample rate must be one of 8000, 12000, 160000, 24000 or 48000.\n\n\
+    \ The command port takes a PMT dict with the following pairs:\n\
+    \ \"ID\", number which must match the unique_id() of the block (required)\n\
+    \ \"local port\", port number on local host for IP packets\n\
+    \ \"remote port\", port number on remote host for IP packets\n\
+    \ \"remote host\", IP address of remote host\n\
+    \ \"pt\", payload type for RTP packest\n\
+    \ \"freq offset\", value in Hz which is output from cmd out.  Intended to be sent to\
+    \ Frequency Xlating FIR Filter block\n\
+    \ If the command port receives a PMT symbol it will trigger the squelch port. \n\n\
+    \ The squelch port outputs the unique_id() of the block and the squelch status\
+    \ from the squelch message port whenever a squelch_sob or squelch_sob tag is received\
+    \ or triggered by a command.\n\ 
+    \ NOTES:\n\
+    \ This block does support connecting to IPv6 addresses.  If an IPv6 address\
+    \ is detected as the destination IP address, the block will automatically\
+    \ adjust for proper connection.  Just make sure your IPv6 stack is enabled.\n\n\
+    \ For best performance and to ensure RTP packets are not dropped, add the following\
+    \ lines to your /etc/sysctl.conf and reboot (the reboot is required).\n\n\
+    \ net.core.rmem_default=26214400\n\
+    \ net.core.rmem_max=104857600\n\
+    \ net.core.wmem_default=65536\n\
+    \ net.core.wmem_max=104857600\n\n"
+#  'file_format' specifies the version of the GRC yml format used in the file
+#  and should usually not be changed.
+file_format: 1

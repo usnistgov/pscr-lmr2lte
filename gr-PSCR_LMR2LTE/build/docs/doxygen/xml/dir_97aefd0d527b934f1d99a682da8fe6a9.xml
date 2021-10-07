@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_97aefd0d527b934f1d99a682da8fe6a9" kind="dir">
+    <compoundname>lib</compoundname>
+    <innerfile refid="opus__rtp__sink__impl_8h">opus_rtp_sink_impl.h</innerfile>
+    <innerfile refid="opus__rtp__source__impl_8h">opus_rtp_source_impl.h</innerfile>
+    <innerfile refid="sip__signaling__impl_8h">sip_signaling_impl.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/lib/"/>
+  </compounddef>
+</doxygen>

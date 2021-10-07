@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classgr_1_1PSCR__LMR2LTE_1_1sip__signaling" kind="class" language="C++" prot="public">
+    <compoundname>gr::PSCR_LMR2LTE::sip_signaling</compoundname>
+    <basecompoundref prot="public" virt="virtual">block</basecompoundref>
+    <derivedcompoundref refid="classgr_1_1PSCR__LMR2LTE_1_1sip__signaling__impl" prot="public" virt="non-virtual">gr::PSCR_LMR2LTE::sip_signaling_impl</derivedcompoundref>
+    <includes refid="sip__signaling_8h" local="no">sip_signaling.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1PSCR__LMR2LTE_1_1sip__signaling_1a39d314b60e33b811e4e8272205f51682" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1PSCR__LMR2LTE_1_1sip__signaling" kindref="compound">sip_signaling</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;sip_signaling&gt; gr::PSCR_LMR2LTE::sip_signaling::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/include/PSCR_LMR2LTE/sip_signaling.h" line="38" column="33" bodyfile="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/include/PSCR_LMR2LTE/sip_signaling.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1PSCR__LMR2LTE_1_1sip__signaling_1a7ce097fcfb99300cd491d3757fdfe077" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1PSCR__LMR2LTE_1_1sip__signaling_1a39d314b60e33b811e4e8272205f51682" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::PSCR_LMR2LTE::sip_signaling::make</definition>
+        <argsstring>(char *SIP_domain, char *PCSCF_addr)</argsstring>
+        <name>make</name>
+        <param>
+          <type>char *</type>
+          <declname>SIP_domain</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>PCSCF_addr</declname>
+        </param>
+        <briefdescription>
+<para>Return a shared_ptr to a new instance of <ref refid="classgr_1_1PSCR__LMR2LTE_1_1sip__signaling" kindref="compound">PSCR_LMR2LTE::sip_signaling</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>To avoid accidental use of raw pointers, <ref refid="classgr_1_1PSCR__LMR2LTE_1_1sip__signaling" kindref="compound">PSCR_LMR2LTE::sip_signaling</ref>&apos;s constructor is in a private implementation class. <ref refid="classgr_1_1PSCR__LMR2LTE_1_1sip__signaling_1a7ce097fcfb99300cd491d3757fdfe077" kindref="member">PSCR_LMR2LTE::sip_signaling::make</ref> is the public interface for creating new instances. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/include/PSCR_LMR2LTE/sip_signaling.h" line="48" column="19"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>&lt;+description of block+&gt; </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>gr::PSCR_LMR2LTE::sip_signaling</label>
+        <link refid="classgr_1_1PSCR__LMR2LTE_1_1sip__signaling"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>gr::PSCR_LMR2LTE::sip_signaling_impl</label>
+        <link refid="classgr_1_1PSCR__LMR2LTE_1_1sip__signaling__impl"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>gr::block</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>gr::PSCR_LMR2LTE::sip_signaling</label>
+        <link refid="classgr_1_1PSCR__LMR2LTE_1_1sip__signaling"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>gr::block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/include/PSCR_LMR2LTE/sip_signaling.h" line="36" column="1" bodyfile="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/include/PSCR_LMR2LTE/sip_signaling.h" bodystart="35" bodyend="49"/>
+    <listofallmembers>
+      <member refid="classgr_1_1PSCR__LMR2LTE_1_1sip__signaling_1a7ce097fcfb99300cd491d3757fdfe077" prot="public" virt="non-virtual"><scope>gr::PSCR_LMR2LTE::sip_signaling</scope><name>make</name></member>
+      <member refid="classgr_1_1PSCR__LMR2LTE_1_1sip__signaling_1a39d314b60e33b811e4e8272205f51682" prot="public" virt="non-virtual"><scope>gr::PSCR_LMR2LTE::sip_signaling</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

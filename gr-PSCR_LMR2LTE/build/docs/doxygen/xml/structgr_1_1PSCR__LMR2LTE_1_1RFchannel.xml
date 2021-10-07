@@ -1,0 +1,289 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structgr_1_1PSCR__LMR2LTE_1_1RFchannel" kind="struct" language="C++" prot="public">
+    <compoundname>gr::PSCR_LMR2LTE::RFchannel</compoundname>
+    <includes refid="sip__signaling__impl_8h" local="no">sip_signaling_impl.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structgr_1_1PSCR__LMR2LTE_1_1RFchannel_1aa110d6c29547ed5a64fbf47a4905d0c3" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gr::PSCR_LMR2LTE::RFchannel::chan</definition>
+        <argsstring></argsstring>
+        <name>chan</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/lib/sip_signaling_impl.h" line="41" column="9" bodyfile="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/lib/sip_signaling_impl.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1PSCR__LMR2LTE_1_1RFchannel_1a6ff2623839c8c07a5e946eb23e5b74ff" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::PSCR_LMR2LTE::RFchannel::src_id</definition>
+        <argsstring></argsstring>
+        <name>src_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/lib/sip_signaling_impl.h" line="42" column="5" bodyfile="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/lib/sip_signaling_impl.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1PSCR__LMR2LTE_1_1RFchannel_1a5ac7cb454415d40fe9392136461af478" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::PSCR_LMR2LTE::RFchannel::sink_id</definition>
+        <argsstring></argsstring>
+        <name>sink_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/lib/sip_signaling_impl.h" line="43" column="5" bodyfile="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/lib/sip_signaling_impl.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1PSCR__LMR2LTE_1_1RFchannel_1a14ae043b41d723ce955ccfef2945f4c6" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gr::PSCR_LMR2LTE::RFchannel::rxpt</definition>
+        <argsstring></argsstring>
+        <name>rxpt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/lib/sip_signaling_impl.h" line="44" column="9" bodyfile="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/lib/sip_signaling_impl.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1PSCR__LMR2LTE_1_1RFchannel_1a46cdf9cb776a7fab8a8486fe4fe1979c" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gr::PSCR_LMR2LTE::RFchannel::txpt</definition>
+        <argsstring></argsstring>
+        <name>txpt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/lib/sip_signaling_impl.h" line="45" column="9" bodyfile="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/lib/sip_signaling_impl.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1PSCR__LMR2LTE_1_1RFchannel_1a921fbf80414dd36e46deda61c234bb5a" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t gr::PSCR_LMR2LTE::RFchannel::lport</definition>
+        <argsstring></argsstring>
+        <name>lport</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/lib/sip_signaling_impl.h" line="46" column="10" bodyfile="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/lib/sip_signaling_impl.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1PSCR__LMR2LTE_1_1RFchannel_1af96ac61a29ebf24d2b359a84d3693206" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t gr::PSCR_LMR2LTE::RFchannel::rport</definition>
+        <argsstring></argsstring>
+        <name>rport</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/lib/sip_signaling_impl.h" line="47" column="10" bodyfile="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/lib/sip_signaling_impl.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1PSCR__LMR2LTE_1_1RFchannel_1a22a080fa67f10ade682461d33f30df4f" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string gr::PSCR_LMR2LTE::RFchannel::rhost</definition>
+        <argsstring></argsstring>
+        <name>rhost</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/lib/sip_signaling_impl.h" line="48" column="13" bodyfile="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/lib/sip_signaling_impl.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1PSCR__LMR2LTE_1_1RFchannel_1a3350b76e3a4bdd5588a7455098754858" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string gr::PSCR_LMR2LTE::RFchannel::sip_user</definition>
+        <argsstring></argsstring>
+        <name>sip_user</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/lib/sip_signaling_impl.h" line="49" column="13" bodyfile="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/lib/sip_signaling_impl.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1PSCR__LMR2LTE_1_1RFchannel_1ad5da7ee35b85549db19b84886d5f7621" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string gr::PSCR_LMR2LTE::RFchannel::sip_pw</definition>
+        <argsstring></argsstring>
+        <name>sip_pw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/lib/sip_signaling_impl.h" line="50" column="13" bodyfile="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/lib/sip_signaling_impl.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1PSCR__LMR2LTE_1_1RFchannel_1a8945d4d1e6f0fd3814a3848ac788c52c" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string gr::PSCR_LMR2LTE::RFchannel::uri</definition>
+        <argsstring></argsstring>
+        <name>uri</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/lib/sip_signaling_impl.h" line="51" column="13" bodyfile="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/lib/sip_signaling_impl.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1PSCR__LMR2LTE_1_1RFchannel_1a53d7103ac2e278f5a44eb6c60a22bf70" prot="public" static="no" mutable="no">
+        <type>pmt::pmt_t</type>
+        <definition>pmt::pmt_t gr::PSCR_LMR2LTE::RFchannel::codec</definition>
+        <argsstring></argsstring>
+        <name>codec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/lib/sip_signaling_impl.h" line="52" column="12" bodyfile="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/lib/sip_signaling_impl.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1PSCR__LMR2LTE_1_1RFchannel_1a3ca7c187182f1a56d522ac4a91df3c79" prot="public" static="no" mutable="no">
+        <type>pmt::pmt_t</type>
+        <definition>pmt::pmt_t gr::PSCR_LMR2LTE::RFchannel::squelch</definition>
+        <argsstring></argsstring>
+        <name>squelch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/lib/sip_signaling_impl.h" line="53" column="12" bodyfile="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/lib/sip_signaling_impl.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1PSCR__LMR2LTE_1_1RFchannel_1a273b352dcb4de2afde752f11787bd4fb" prot="public" static="no" mutable="no">
+        <type>pjsua_acc_id</type>
+        <definition>pjsua_acc_id gr::PSCR_LMR2LTE::RFchannel::acc_id</definition>
+        <argsstring></argsstring>
+        <name>acc_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/lib/sip_signaling_impl.h" line="54" column="14" bodyfile="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/lib/sip_signaling_impl.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1PSCR__LMR2LTE_1_1RFchannel_1ac5efd79a7e97e34db8ee548ea20b20d0" prot="public" static="no" mutable="no">
+        <type>pjsua_call_id</type>
+        <definition>pjsua_call_id gr::PSCR_LMR2LTE::RFchannel::call_id</definition>
+        <argsstring></argsstring>
+        <name>call_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/lib/sip_signaling_impl.h" line="55" column="15" bodyfile="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/lib/sip_signaling_impl.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1PSCR__LMR2LTE_1_1RFchannel_1aa56388c2543d0819490de6f0aad49a3b" prot="public" static="no" mutable="no">
+        <type>pj::Call *</type>
+        <definition>pj::Call* gr::PSCR_LMR2LTE::RFchannel::call</definition>
+        <argsstring></argsstring>
+        <name>call</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/lib/sip_signaling_impl.h" line="56" column="10" bodyfile="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/lib/sip_signaling_impl.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1PSCR__LMR2LTE_1_1RFchannel_1a521ab346553c00a9d6eea50b076eed2a" prot="public" static="no" mutable="no">
+        <type>pj::Account *</type>
+        <definition>pj::Account* gr::PSCR_LMR2LTE::RFchannel::acc</definition>
+        <argsstring></argsstring>
+        <name>acc</name>
+        <initializer>=NULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/lib/sip_signaling_impl.h" line="57" column="13" bodyfile="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/lib/sip_signaling_impl.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1PSCR__LMR2LTE_1_1RFchannel_1a7000c341a428926774c38f655a96ce19" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gr::PSCR_LMR2LTE::RFchannel::del_call_scheduled</definition>
+        <argsstring></argsstring>
+        <name>del_call_scheduled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/lib/sip_signaling_impl.h" line="58" column="6" bodyfile="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/lib/sip_signaling_impl.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="1">
+        <label>gr::PSCR_LMR2LTE::RFchannel</label>
+        <link refid="structgr_1_1PSCR__LMR2LTE_1_1RFchannel"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>rhost</edgelabel>
+          <edgelabel>uri</edgelabel>
+          <edgelabel>sip_pw</edgelabel>
+          <edgelabel>sip_user</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>std::string</label>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/lib/sip_signaling_impl.h" line="40" column="16" bodyfile="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/lib/sip_signaling_impl.h" bodystart="40" bodyend="59"/>
+    <listofallmembers>
+      <member refid="structgr_1_1PSCR__LMR2LTE_1_1RFchannel_1a521ab346553c00a9d6eea50b076eed2a" prot="public" virt="non-virtual"><scope>gr::PSCR_LMR2LTE::RFchannel</scope><name>acc</name></member>
+      <member refid="structgr_1_1PSCR__LMR2LTE_1_1RFchannel_1a273b352dcb4de2afde752f11787bd4fb" prot="public" virt="non-virtual"><scope>gr::PSCR_LMR2LTE::RFchannel</scope><name>acc_id</name></member>
+      <member refid="structgr_1_1PSCR__LMR2LTE_1_1RFchannel_1aa56388c2543d0819490de6f0aad49a3b" prot="public" virt="non-virtual"><scope>gr::PSCR_LMR2LTE::RFchannel</scope><name>call</name></member>
+      <member refid="structgr_1_1PSCR__LMR2LTE_1_1RFchannel_1ac5efd79a7e97e34db8ee548ea20b20d0" prot="public" virt="non-virtual"><scope>gr::PSCR_LMR2LTE::RFchannel</scope><name>call_id</name></member>
+      <member refid="structgr_1_1PSCR__LMR2LTE_1_1RFchannel_1aa110d6c29547ed5a64fbf47a4905d0c3" prot="public" virt="non-virtual"><scope>gr::PSCR_LMR2LTE::RFchannel</scope><name>chan</name></member>
+      <member refid="structgr_1_1PSCR__LMR2LTE_1_1RFchannel_1a53d7103ac2e278f5a44eb6c60a22bf70" prot="public" virt="non-virtual"><scope>gr::PSCR_LMR2LTE::RFchannel</scope><name>codec</name></member>
+      <member refid="structgr_1_1PSCR__LMR2LTE_1_1RFchannel_1a7000c341a428926774c38f655a96ce19" prot="public" virt="non-virtual"><scope>gr::PSCR_LMR2LTE::RFchannel</scope><name>del_call_scheduled</name></member>
+      <member refid="structgr_1_1PSCR__LMR2LTE_1_1RFchannel_1a921fbf80414dd36e46deda61c234bb5a" prot="public" virt="non-virtual"><scope>gr::PSCR_LMR2LTE::RFchannel</scope><name>lport</name></member>
+      <member refid="structgr_1_1PSCR__LMR2LTE_1_1RFchannel_1a22a080fa67f10ade682461d33f30df4f" prot="public" virt="non-virtual"><scope>gr::PSCR_LMR2LTE::RFchannel</scope><name>rhost</name></member>
+      <member refid="structgr_1_1PSCR__LMR2LTE_1_1RFchannel_1af96ac61a29ebf24d2b359a84d3693206" prot="public" virt="non-virtual"><scope>gr::PSCR_LMR2LTE::RFchannel</scope><name>rport</name></member>
+      <member refid="structgr_1_1PSCR__LMR2LTE_1_1RFchannel_1a14ae043b41d723ce955ccfef2945f4c6" prot="public" virt="non-virtual"><scope>gr::PSCR_LMR2LTE::RFchannel</scope><name>rxpt</name></member>
+      <member refid="structgr_1_1PSCR__LMR2LTE_1_1RFchannel_1a5ac7cb454415d40fe9392136461af478" prot="public" virt="non-virtual"><scope>gr::PSCR_LMR2LTE::RFchannel</scope><name>sink_id</name></member>
+      <member refid="structgr_1_1PSCR__LMR2LTE_1_1RFchannel_1ad5da7ee35b85549db19b84886d5f7621" prot="public" virt="non-virtual"><scope>gr::PSCR_LMR2LTE::RFchannel</scope><name>sip_pw</name></member>
+      <member refid="structgr_1_1PSCR__LMR2LTE_1_1RFchannel_1a3350b76e3a4bdd5588a7455098754858" prot="public" virt="non-virtual"><scope>gr::PSCR_LMR2LTE::RFchannel</scope><name>sip_user</name></member>
+      <member refid="structgr_1_1PSCR__LMR2LTE_1_1RFchannel_1a3ca7c187182f1a56d522ac4a91df3c79" prot="public" virt="non-virtual"><scope>gr::PSCR_LMR2LTE::RFchannel</scope><name>squelch</name></member>
+      <member refid="structgr_1_1PSCR__LMR2LTE_1_1RFchannel_1a6ff2623839c8c07a5e946eb23e5b74ff" prot="public" virt="non-virtual"><scope>gr::PSCR_LMR2LTE::RFchannel</scope><name>src_id</name></member>
+      <member refid="structgr_1_1PSCR__LMR2LTE_1_1RFchannel_1a46cdf9cb776a7fab8a8486fe4fe1979c" prot="public" virt="non-virtual"><scope>gr::PSCR_LMR2LTE::RFchannel</scope><name>txpt</name></member>
+      <member refid="structgr_1_1PSCR__LMR2LTE_1_1RFchannel_1a8945d4d1e6f0fd3814a3848ac788c52c" prot="public" virt="non-virtual"><scope>gr::PSCR_LMR2LTE::RFchannel</scope><name>uri</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

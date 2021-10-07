@@ -1,0 +1,27 @@
+[
+{
+  "directory": "/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/build/lib",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_REGEX_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -DGR_CTRLPORT -Dgnuradio_PSCR_LMR2LTE_EXPORTS -I/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/lib/../include -I/usr/include/opus -isystem /home/jonc/gnuradio/include  -O3 -DNDEBUG -fPIC   -fvisibility=hidden -std=gnu++11 -o CMakeFiles/gnuradio-PSCR_LMR2LTE.dir/opus_rtp_sink_impl.cc.o -c /home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/lib/opus_rtp_sink_impl.cc",
+  "file": "/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/lib/opus_rtp_sink_impl.cc"
+},
+{
+  "directory": "/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/build/lib",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_REGEX_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -DGR_CTRLPORT -Dgnuradio_PSCR_LMR2LTE_EXPORTS -I/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/lib/../include -I/usr/include/opus -isystem /home/jonc/gnuradio/include  -O3 -DNDEBUG -fPIC   -fvisibility=hidden -std=gnu++11 -o CMakeFiles/gnuradio-PSCR_LMR2LTE.dir/opus_rtp_source_impl.cc.o -c /home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/lib/opus_rtp_source_impl.cc",
+  "file": "/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/lib/opus_rtp_source_impl.cc"
+},
+{
+  "directory": "/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/build/lib",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_REGEX_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -DGR_CTRLPORT -Dgnuradio_PSCR_LMR2LTE_EXPORTS -I/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/lib/../include -I/usr/include/opus -isystem /home/jonc/gnuradio/include  -O3 -DNDEBUG -fPIC   -fvisibility=hidden -std=gnu++11 -o CMakeFiles/gnuradio-PSCR_LMR2LTE.dir/sip_signaling_impl.cc.o -c /home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/lib/sip_signaling_impl.cc",
+  "file": "/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/lib/sip_signaling_impl.cc"
+},
+{
+  "directory": "/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/build/swig",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_REGEX_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -DGR_CTRLPORT -DPSCR_LMR2LTE_swig_EXPORTS -I/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/build/swig -I/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/swig -I/home/jonc/gnuradio/include/gnuradio/swig -I/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/lib/../include -I/usr/include/opus -isystem /usr/include/python3.8 -isystem /home/jonc/gnuradio/include  -O3 -DNDEBUG -fPIC   -fvisibility=hidden -std=gnu++11 -o CMakeFiles/PSCR_LMR2LTE_swig.dir/CMakeFiles/PSCR_LMR2LTE_swig.dir/PSCR_LMR2LTE_swigPYTHON_wrap.cxx.o -c /home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/build/swig/CMakeFiles/PSCR_LMR2LTE_swig.dir/PSCR_LMR2LTE_swigPYTHON_wrap.cxx",
+  "file": "/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/build/swig/CMakeFiles/PSCR_LMR2LTE_swig.dir/PSCR_LMR2LTE_swigPYTHON_wrap.cxx"
+},
+{
+  "directory": "/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/build/swig",
+  "command": "/usr/bin/c++    -O3 -DNDEBUG   -fvisibility=hidden -std=gnu++11 -o CMakeFiles/_PSCR_LMR2LTE_swig_doc_tag.dir/_PSCR_LMR2LTE_swig_doc_tag.cpp.o -c /home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/build/swig/_PSCR_LMR2LTE_swig_doc_tag.cpp",
+  "file": "/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/build/swig/_PSCR_LMR2LTE_swig_doc_tag.cpp"
+}
+]

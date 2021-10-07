@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classgr_1_1PSCR__LMR2LTE_1_1pjsua2Call" kind="class" language="C++" prot="public">
+    <compoundname>gr::PSCR_LMR2LTE::pjsua2Call</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Call</basecompoundref>
+    <includes refid="sip__signaling__impl_8h" local="no">sip_signaling_impl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1PSCR__LMR2LTE_1_1pjsua2Call_1ad1b044c8e4cf1664f5d6e3ae92d44f35" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string gr::PSCR_LMR2LTE::pjsua2Call::lastMessage</definition>
+        <argsstring></argsstring>
+        <name>lastMessage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/lib/sip_signaling_impl.h" line="85" column="13" bodyfile="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/lib/sip_signaling_impl.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1PSCR__LMR2LTE_1_1pjsua2Call_1ad24765301db85a2e5422b3a0fbb5a7d1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>gr::PSCR_LMR2LTE::pjsua2Call::pjsua2Call</definition>
+        <argsstring>(pj::Account &amp;acc, int call_id=PJSUA_INVALID_ID)</argsstring>
+        <name>pjsua2Call</name>
+        <param>
+          <type>pj::Account &amp;</type>
+          <declname>acc</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>call_id</declname>
+          <defval>PJSUA_INVALID_ID</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/lib/sip_signaling_impl.h" line="73" column="1" bodyfile="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/lib/sip_signaling_impl.h" bodystart="73" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1PSCR__LMR2LTE_1_1pjsua2Call_1a14f4303640921e02b14e3f427632423a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gr::PSCR_LMR2LTE::pjsua2Call::onCallState</definition>
+        <argsstring>(pj::OnCallStateParam &amp;prm)</argsstring>
+        <name>onCallState</name>
+        <param>
+          <type>pj::OnCallStateParam &amp;</type>
+          <declname>prm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/lib/sip_signaling_impl.h" line="78" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1PSCR__LMR2LTE_1_1pjsua2Call_1a14cf52af8bfbc89d2c74246197a38a21" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gr::PSCR_LMR2LTE::pjsua2Call::onCallMediaState</definition>
+        <argsstring>(pj::OnCallMediaStateParam &amp;prm)</argsstring>
+        <name>onCallMediaState</name>
+        <param>
+          <type>pj::OnCallMediaStateParam &amp;</type>
+          <declname>prm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/lib/sip_signaling_impl.h" line="80" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1PSCR__LMR2LTE_1_1pjsua2Call_1a4cd39b328da16070970a2d8f1a7fe330" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void gr::PSCR_LMR2LTE::pjsua2Call::onCallTsxState</definition>
+        <argsstring>(pj::OnCallTsxStateParam &amp;prm)</argsstring>
+        <name>onCallTsxState</name>
+        <param>
+          <type>pj::OnCallTsxStateParam &amp;</type>
+          <declname>prm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/lib/sip_signaling_impl.h" line="82" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>pj::Call</label>
+      </node>
+      <node id="1">
+        <label>gr::PSCR_LMR2LTE::pjsua2Call</label>
+        <link refid="classgr_1_1PSCR__LMR2LTE_1_1pjsua2Call"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>pj::Call</label>
+      </node>
+      <node id="1">
+        <label>gr::PSCR_LMR2LTE::pjsua2Call</label>
+        <link refid="classgr_1_1PSCR__LMR2LTE_1_1pjsua2Call"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/lib/sip_signaling_impl.h" line="71" column="1" bodyfile="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/lib/sip_signaling_impl.h" bodystart="70" bodyend="86"/>
+    <listofallmembers>
+      <member refid="classgr_1_1PSCR__LMR2LTE_1_1pjsua2Call_1ad1b044c8e4cf1664f5d6e3ae92d44f35" prot="private" virt="non-virtual"><scope>gr::PSCR_LMR2LTE::pjsua2Call</scope><name>lastMessage</name></member>
+      <member refid="classgr_1_1PSCR__LMR2LTE_1_1pjsua2Call_1a14cf52af8bfbc89d2c74246197a38a21" prot="public" virt="virtual"><scope>gr::PSCR_LMR2LTE::pjsua2Call</scope><name>onCallMediaState</name></member>
+      <member refid="classgr_1_1PSCR__LMR2LTE_1_1pjsua2Call_1a14f4303640921e02b14e3f427632423a" prot="public" virt="virtual"><scope>gr::PSCR_LMR2LTE::pjsua2Call</scope><name>onCallState</name></member>
+      <member refid="classgr_1_1PSCR__LMR2LTE_1_1pjsua2Call_1a4cd39b328da16070970a2d8f1a7fe330" prot="public" virt="virtual"><scope>gr::PSCR_LMR2LTE::pjsua2Call</scope><name>onCallTsxState</name></member>
+      <member refid="classgr_1_1PSCR__LMR2LTE_1_1pjsua2Call_1ad24765301db85a2e5422b3a0fbb5a7d1" prot="public" virt="non-virtual"><scope>gr::PSCR_LMR2LTE::pjsua2Call</scope><name>pjsua2Call</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

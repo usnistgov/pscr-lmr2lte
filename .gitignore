@@ -1,0 +1,7 @@
+# Don't track content of these folders
+build/*
+./bin/
+# Don't track these file types
+*.pcapng
+*.pcap
+*.wav

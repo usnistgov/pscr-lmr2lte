@@ -1,0 +1,573 @@
+options:
+  parameters:
+    author: ''
+    category: '[GRC Hier Blocks]'
+    cmake_opt: ''
+    comment: ''
+    copyright: ''
+    description: ''
+    gen_cmake: 'On'
+    gen_linking: dynamic
+    generate_options: hb
+    hier_block_src_path: '.:'
+    id: NBFMreceive
+    max_nouts: '0'
+    output_language: python
+    placement: (0,0)
+    qt_qss_theme: ''
+    realtime_scheduling: ''
+    run: 'True'
+    run_command: '{python} -u {filename}'
+    run_options: prompt
+    sizing_mode: fixed
+    thread_safe_setters: ''
+    title: Analog NBFM receiver
+    window_size: ''
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [8, 8]
+    rotation: 0
+    state: enabled
+
+blocks:
+- name: MaxOutBuf
+  id: variable
+  parameters:
+    comment: ''
+    value: '1024'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [664, 132.0]
+    rotation: 0
+    state: enabled
+- name: CTCSSdetect_0
+  id: CTCSSdetect
+  parameters:
+    affinity: ''
+    alias: ''
+    audio_samp_rate: audio_samp_rate
+    comment: ''
+    ctcss: ctcss
+    maxoutbuf: '0'
+    minoutbuf: '0'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1216, 308.0]
+    rotation: 0
+    state: enabled
+- name: Max_deviation
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: Maximum Deviation (Hz)
+    short_id: ''
+    type: eng_float
+    value: '2500'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [555, 10]
+    rotation: 0
+    state: true
+- name: PSCR_LMR2LTE_opus_rtp_sink_0
+  id: PSCR_LMR2LTE_opus_rtp_sink
+  parameters:
+    SIP_pw: SIPpw
+    SIP_user: SIPuser
+    addr: 127.0.0.1
+    affinity: ''
+    alias: ''
+    comment: ''
+    lport: '16384'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    rport: '16384'
+    rx_freq_offset: RxOffset
+    samprate: audio_samp_rate
+    uri: SIPuri
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1896, 300.0]
+    rotation: 0
+    state: enabled
+- name: RxOffset
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: Rx Frequency Offset (Hz)
+    short_id: ''
+    type: eng_float
+    value: '0'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [920, 11]
+    rotation: 0
+    state: true
+- name: SIPpw
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: SIP password
+    short_id: ''
+    type: str
+    value: '""'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1218, 11]
+    rotation: 0
+    state: enabled
+- name: SIPuri
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: SIP URI to call
+    short_id: ''
+    type: str
+    value: '""'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1340, 13]
+    rotation: 0
+    state: enabled
+- name: SIPuser
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: SIP user name
+    short_id: ''
+    type: str
+    value: '""'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1090, 12]
+    rotation: 0
+    state: enabled
+- name: analog_nbfm_rx_0
+  id: analog_nbfm_rx
+  parameters:
+    affinity: ''
+    alias: ''
+    audio_rate: audio_samp_rate
+    comment: ''
+    max_dev: '2500'
+    maxoutbuf: MaxOutBuf
+    minoutbuf: '0'
+    quad_rate: audio_samp_rate
+    tau: 75e-6
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [832, 236.0]
+    rotation: 0
+    state: enabled
+- name: analog_pwr_squelch_xx_1
+  id: analog_pwr_squelch_xx
+  parameters:
+    affinity: ''
+    alias: ''
+    alpha: '0.01'
+    comment: "Power Squelch is set for \na fairly slow turn on/off time"
+    gate: 'False'
+    maxoutbuf: MaxOutBuf
+    minoutbuf: '0'
+    ramp: int(0.05*audio_samp_rate)
+    threshold: squelch
+    type: complex
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [632, 236.0]
+    rotation: 0
+    state: enabled
+- name: aud_to_rf
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: Sample Rate to Audio Rate ratio
+    short_id: ''
+    type: intx
+    value: '21'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [202, 10]
+    rotation: 0
+    state: enabled
+- name: audio_samp_rate
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: Audio Sample Rate
+    short_id: ''
+    type: intx
+    value: '48000'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [382, 8]
+    rotation: 0
+    state: enabled
+- name: blocks_copy_0
+  id: blocks_copy
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: "Copy will be enabled \nif SIPuser is specified"
+    enabled: bool(len(SIPuser))
+    maxoutbuf: MaxOutBuf
+    minoutbuf: '0'
+    showports: 'False'
+    type: complex
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [168, 324.0]
+    rotation: 0
+    state: enabled
+- name: blocks_multiply_matrix_xx_0
+  id: blocks_multiply_matrix_xx
+  parameters:
+    A: '[[not(ctcss>60), (ctcss>60)]]'
+    affinity: ''
+    alias: ''
+    comment: 'Forward data and tags
+
+      as controlled by ctcss enable'
+    maxoutbuf: '10240'
+    minoutbuf: '0'
+    tag_propagation_policy: gr.TPP_CUSTOM
+    type: float
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1448, 280.0]
+    rotation: 0
+    state: enabled
+- name: blocks_multiply_xx_0
+  id: blocks_multiply_xx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: "Zero out data \nwhen the squelch\nthreshold is not\nreached. \n(faster\
+      \ than\nPower Squelch \nto block noise \nat end of \ntransmission)"
+    maxoutbuf: '10240'
+    minoutbuf: '0'
+    num_inputs: '2'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1064, 264.0]
+    rotation: 0
+    state: enabled
+- name: blocks_nlog10_ff_0
+  id: blocks_nlog10_ff
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    k: '0'
+    maxoutbuf: MaxOutBuf
+    minoutbuf: '0'
+    n: '20'
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [752, 380.0]
+    rotation: 0
+    state: enabled
+- name: blocks_rms_xx_0
+  id: blocks_rms_xx
+  parameters:
+    affinity: ''
+    alias: ''
+    alpha: '1'
+    comment: "Set for a faster reaction \nthan power squelch to\nenable fast turn\
+      \ off"
+    maxoutbuf: MaxOutBuf
+    minoutbuf: '0'
+    type: complex
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [624, 380.0]
+    rotation: 0
+    state: enabled
+- name: blocks_tag_debug_0
+  id: blocks_tag_debug
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    display: 'True'
+    filter: '""'
+    name: ''
+    num_inputs: '1'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1936, 220.0]
+    rotation: 0
+    state: disabled
+- name: blocks_tag_debug_1
+  id: blocks_tag_debug
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    display: 'True'
+    filter: '""'
+    name: ''
+    num_inputs: '1'
+    type: complex
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [880, 132.0]
+    rotation: 0
+    state: disabled
+- name: blocks_threshold_ff_0
+  id: blocks_threshold_ff
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    high: squelch
+    init: '0'
+    low: squelch-1
+    maxoutbuf: MaxOutBuf
+    minoutbuf: '0'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [880, 364.0]
+    rotation: 0
+    state: enabled
+- name: ctcss
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: CTCSS Frequency (Hz)
+    short_id: ''
+    type: eng_float
+    value: '0'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [751, 9]
+    rotation: 0
+    state: true
+- name: freq_xlating_fir_filter_xxx_0
+  id: freq_xlating_fir_filter_xxx
+  parameters:
+    affinity: ''
+    alias: ''
+    center_freq: RxOffset
+    comment: ''
+    decim: aud_to_rf
+    maxoutbuf: MaxOutBuf
+    minoutbuf: '0'
+    samp_rate: audio_samp_rate*aud_to_rf
+    taps: firdes.complex_band_pass(1, audio_samp_rate*aud_to_rf, -audio_samp_rate/2,
+      audio_samp_rate/2, 1000)
+    type: ccc
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [336, 316.0]
+    rotation: 0
+    state: enabled
+- name: high_pass_filter_0
+  id: high_pass_filter
+  parameters:
+    affinity: ''
+    alias: ''
+    beta: '6.76'
+    comment: ''
+    cutoff_freq: '250'
+    decim: '1'
+    gain: '1'
+    interp: '1'
+    maxoutbuf: MaxOutBuf
+    minoutbuf: '0'
+    samp_rate: audio_samp_rate
+    type: interp_fir_filter_fff
+    width: '25'
+    win: firdes.WIN_HAMMING
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1656, 260.0]
+    rotation: 0
+    state: enabled
+- name: pad_sink_0
+  id: pad_sink
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    label: msg out
+    num_streams: '1'
+    optional: 'True'
+    type: message
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [2128, 324.0]
+    rotation: 0
+    state: true
+- name: pad_sink_1
+  id: pad_sink
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    label: demod out
+    num_streams: '1'
+    optional: 'True'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1672, 204.0]
+    rotation: 0
+    state: enabled
+- name: pad_source_0
+  id: pad_source
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    label: in
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    num_streams: '1'
+    optional: 'False'
+    type: complex
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [24, 324.0]
+    rotation: 0
+    state: true
+- name: pad_source_1
+  id: pad_source
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    label: msg in
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    num_streams: '1'
+    optional: 'True'
+    type: message
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1664, 412.0]
+    rotation: 0
+    state: enabled
+- name: squelch
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: Squelch Level (dB)
+    short_id: ''
+    type: eng_float
+    value: '-80'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1531, 9]
+    rotation: 0
+    state: true
+
+connections:
+- [CTCSSdetect_0, '0', blocks_multiply_matrix_xx_0, '1']
+- [PSCR_LMR2LTE_opus_rtp_sink_0, squelch, pad_sink_0, in]
+- [analog_nbfm_rx_0, '0', blocks_multiply_xx_0, '0']
+- [analog_nbfm_rx_0, '0', pad_sink_1, '0']
+- [analog_pwr_squelch_xx_1, '0', analog_nbfm_rx_0, '0']
+- [analog_pwr_squelch_xx_1, '0', blocks_tag_debug_1, '0']
+- [blocks_copy_0, '0', freq_xlating_fir_filter_xxx_0, '0']
+- [blocks_multiply_matrix_xx_0, '0', high_pass_filter_0, '0']
+- [blocks_multiply_xx_0, '0', CTCSSdetect_0, '0']
+- [blocks_multiply_xx_0, '0', blocks_multiply_matrix_xx_0, '0']
+- [blocks_nlog10_ff_0, '0', blocks_threshold_ff_0, '0']
+- [blocks_rms_xx_0, '0', blocks_nlog10_ff_0, '0']
+- [blocks_threshold_ff_0, '0', blocks_multiply_xx_0, '1']
+- [freq_xlating_fir_filter_xxx_0, '0', analog_pwr_squelch_xx_1, '0']
+- [freq_xlating_fir_filter_xxx_0, '0', blocks_rms_xx_0, '0']
+- [high_pass_filter_0, '0', PSCR_LMR2LTE_opus_rtp_sink_0, '0']
+- [high_pass_filter_0, '0', blocks_tag_debug_0, '0']
+- [pad_source_0, '0', blocks_copy_0, '0']
+- [pad_source_1, out, PSCR_LMR2LTE_opus_rtp_sink_0, command]
+
+metadata:
+  file_format: 1

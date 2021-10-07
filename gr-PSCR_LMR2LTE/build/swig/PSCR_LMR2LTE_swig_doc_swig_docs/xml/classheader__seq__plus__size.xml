@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classheader__seq__plus__size" kind="class" language="C++" prot="public">
+    <compoundname>header_seq_plus_size</compoundname>
+    <includes refid="packet__headers_8h" local="no">packet_headers.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classheader__seq__plus__size_1ada4dde733404fc709f8b50b2e5e53601" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t header_seq_plus_size::seqnum</definition>
+        <argsstring></argsstring>
+        <name>seqnum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/include/PSCR_LMR2LTE/packet_headers.h" line="30" column="14" bodyfile="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/include/PSCR_LMR2LTE/packet_headers.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classheader__seq__plus__size_1a8069aa9e69c306fb595b52ee124d8e3f" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t header_seq_plus_size::length</definition>
+        <argsstring></argsstring>
+        <name>length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/include/PSCR_LMR2LTE/packet_headers.h" line="31" column="13" bodyfile="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/include/PSCR_LMR2LTE/packet_headers.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classheader__seq__plus__size_1a1aa735816815633ee3e25f91ca500890" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>header_seq_plus_size::header_seq_plus_size</definition>
+        <argsstring>()</argsstring>
+        <name>header_seq_plus_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/include/PSCR_LMR2LTE/packet_headers.h" line="33" column="5" bodyfile="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/include/PSCR_LMR2LTE/packet_headers.h" bodystart="33" bodyend="37"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/include/PSCR_LMR2LTE/packet_headers.h" line="27" column="1" bodyfile="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/include/PSCR_LMR2LTE/packet_headers.h" bodystart="26" bodyend="38"/>
+    <listofallmembers>
+      <member refid="classheader__seq__plus__size_1a1aa735816815633ee3e25f91ca500890" prot="public" virt="non-virtual"><scope>header_seq_plus_size</scope><name>header_seq_plus_size</name></member>
+      <member refid="classheader__seq__plus__size_1a8069aa9e69c306fb595b52ee124d8e3f" prot="public" virt="non-virtual"><scope>header_seq_plus_size</scope><name>length</name></member>
+      <member refid="classheader__seq__plus__size_1ada4dde733404fc709f8b50b2e5e53601" prot="public" virt="non-virtual"><scope>header_seq_plus_size</scope><name>seqnum</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

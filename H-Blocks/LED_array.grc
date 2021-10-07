@@ -1,0 +1,722 @@
+options:
+  parameters:
+    author: ''
+    category: '[GRC Hier Blocks]'
+    cmake_opt: ''
+    comment: ''
+    copyright: ''
+    description: ''
+    gen_cmake: 'On'
+    gen_linking: dynamic
+    generate_options: hb_qt_gui
+    hier_block_src_path: '.:'
+    id: led_array
+    max_nouts: '0'
+    output_language: python
+    placement: (0,0)
+    qt_qss_theme: ''
+    realtime_scheduling: ''
+    run: 'True'
+    run_command: '{python} -u {filename}'
+    run_options: prompt
+    sizing_mode: fixed
+    thread_safe_setters: ''
+    title: LED Array
+    window_size: ''
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [8, 8]
+    rotation: 0
+    state: enabled
+
+blocks:
+- name: CH1
+  id: PSCR_LMR2LTE_label
+  parameters:
+    affinity: ''
+    alias: ''
+    cellalignment: '2'
+    comment: ''
+    gui_hint: (0,3,1,1)
+    label: '""'
+    verticalalignment: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [776, 204.0]
+    rotation: 0
+    state: enabled
+- name: CH1_Call
+  id: PSCR_LMR2LTE_led
+  parameters:
+    affinity: ''
+    alias: ''
+    cellalignment: '1'
+    color: transparent
+    comment: ''
+    gui_hint: 0,1,1,1
+    label: '"Call"'
+    maxSize: '40'
+    position: '1'
+    verticalalignment: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [472, 204.0]
+    rotation: 0
+    state: enabled
+- name: CH1_Floor
+  id: PSCR_LMR2LTE_led
+  parameters:
+    affinity: ''
+    alias: ''
+    cellalignment: '1'
+    color: transparent
+    comment: ''
+    gui_hint: 0,2,1,1
+    label: '"Floor"'
+    maxSize: '40'
+    position: '1'
+    verticalalignment: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [616, 204.0]
+    rotation: 0
+    state: enabled
+- name: CH1_Reg
+  id: PSCR_LMR2LTE_led
+  parameters:
+    affinity: ''
+    alias: LED1
+    cellalignment: '2'
+    color: transparent
+    comment: ''
+    gui_hint: (0,0,1,1)
+    label: '"Register"'
+    maxSize: '40'
+    position: '1'
+    verticalalignment: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [312, 204.0]
+    rotation: 0
+    state: enabled
+- name: CH2
+  id: PSCR_LMR2LTE_label
+  parameters:
+    affinity: ''
+    alias: ''
+    cellalignment: '2'
+    comment: ''
+    gui_hint: (1,3,1,1)
+    label: '""'
+    verticalalignment: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [776, 260.0]
+    rotation: 0
+    state: enabled
+- name: CH2_Call
+  id: PSCR_LMR2LTE_led
+  parameters:
+    affinity: ''
+    alias: ''
+    cellalignment: '1'
+    color: transparent
+    comment: ''
+    gui_hint: 1,1,1,1
+    label: ''
+    maxSize: '40'
+    position: '1'
+    verticalalignment: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [472, 260.0]
+    rotation: 0
+    state: enabled
+- name: CH2_Floor
+  id: PSCR_LMR2LTE_led
+  parameters:
+    affinity: ''
+    alias: ''
+    cellalignment: '1'
+    color: transparent
+    comment: ''
+    gui_hint: 1,2,1,1
+    label: ''
+    maxSize: '40'
+    position: '1'
+    verticalalignment: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [616, 260.0]
+    rotation: 0
+    state: enabled
+- name: CH2_Reg
+  id: PSCR_LMR2LTE_led
+  parameters:
+    affinity: ''
+    alias: ''
+    cellalignment: '2'
+    color: transparent
+    comment: ''
+    gui_hint: 1,0,1,1
+    label: ''
+    maxSize: '40'
+    position: '1'
+    verticalalignment: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [312, 260.0]
+    rotation: 0
+    state: enabled
+- name: CH3
+  id: PSCR_LMR2LTE_label
+  parameters:
+    affinity: ''
+    alias: ''
+    cellalignment: '2'
+    comment: ''
+    gui_hint: (2,3,1,1)
+    label: '""'
+    verticalalignment: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [776, 316.0]
+    rotation: 0
+    state: enabled
+- name: CH3_Call
+  id: PSCR_LMR2LTE_led
+  parameters:
+    affinity: ''
+    alias: ''
+    cellalignment: '1'
+    color: transparent
+    comment: ''
+    gui_hint: 2,1,1,1
+    label: ''
+    maxSize: '40'
+    position: '1'
+    verticalalignment: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [472, 316.0]
+    rotation: 0
+    state: enabled
+- name: CH3_Floor
+  id: PSCR_LMR2LTE_led
+  parameters:
+    affinity: ''
+    alias: ''
+    cellalignment: '1'
+    color: transparent
+    comment: ''
+    gui_hint: 2,2,1,1
+    label: ''
+    maxSize: '40'
+    position: '1'
+    verticalalignment: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [616, 316.0]
+    rotation: 0
+    state: enabled
+- name: CH3_Reg
+  id: PSCR_LMR2LTE_led
+  parameters:
+    affinity: ''
+    alias: ''
+    cellalignment: '2'
+    color: transparent
+    comment: ''
+    gui_hint: 2,0,1,1
+    label: ''
+    maxSize: '40'
+    position: '1'
+    verticalalignment: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [312, 316.0]
+    rotation: 0
+    state: enabled
+- name: CH4
+  id: PSCR_LMR2LTE_label
+  parameters:
+    affinity: ''
+    alias: ''
+    cellalignment: '2'
+    comment: ''
+    gui_hint: (3,3,1,1)
+    label: '""'
+    verticalalignment: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [776, 372.0]
+    rotation: 0
+    state: enabled
+- name: CH4_Call
+  id: PSCR_LMR2LTE_led
+  parameters:
+    affinity: ''
+    alias: ''
+    cellalignment: '1'
+    color: transparent
+    comment: ''
+    gui_hint: 3,1,1,1
+    label: ''
+    maxSize: '40'
+    position: '1'
+    verticalalignment: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [472, 372.0]
+    rotation: 0
+    state: enabled
+- name: CH4_Floor
+  id: PSCR_LMR2LTE_led
+  parameters:
+    affinity: ''
+    alias: ''
+    cellalignment: '1'
+    color: transparent
+    comment: ''
+    gui_hint: 3,2,1,1
+    label: ''
+    maxSize: '40'
+    position: '1'
+    verticalalignment: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [616, 372.0]
+    rotation: 0
+    state: enabled
+- name: CH4_Reg
+  id: PSCR_LMR2LTE_led
+  parameters:
+    affinity: ''
+    alias: ''
+    cellalignment: '2'
+    color: transparent
+    comment: ''
+    gui_hint: 3,0,1,1
+    label: ''
+    maxSize: '40'
+    position: '1'
+    verticalalignment: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [312, 372.0]
+    rotation: 0
+    state: enabled
+- name: CH5
+  id: PSCR_LMR2LTE_label
+  parameters:
+    affinity: ''
+    alias: ''
+    cellalignment: '2'
+    comment: ''
+    gui_hint: (4,3,1,1)
+    label: '""'
+    verticalalignment: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [776, 428.0]
+    rotation: 0
+    state: enabled
+- name: CH5_Call
+  id: PSCR_LMR2LTE_led
+  parameters:
+    affinity: ''
+    alias: ''
+    cellalignment: '1'
+    color: transparent
+    comment: ''
+    gui_hint: 4,1,1,1
+    label: ''
+    maxSize: '40'
+    position: '1'
+    verticalalignment: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [472, 428.0]
+    rotation: 0
+    state: enabled
+- name: CH5_Floor
+  id: PSCR_LMR2LTE_led
+  parameters:
+    affinity: ''
+    alias: ''
+    cellalignment: '1'
+    color: transparent
+    comment: ''
+    gui_hint: 4,2,1,1
+    label: ''
+    maxSize: '40'
+    position: '1'
+    verticalalignment: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [616, 428.0]
+    rotation: 0
+    state: enabled
+- name: CH5_Reg
+  id: PSCR_LMR2LTE_led
+  parameters:
+    affinity: ''
+    alias: ''
+    cellalignment: '2'
+    color: transparent
+    comment: ''
+    gui_hint: 4,0,1,1
+    label: ''
+    maxSize: '40'
+    position: '1'
+    verticalalignment: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [312, 428.0]
+    rotation: 0
+    state: enabled
+- name: CH6
+  id: PSCR_LMR2LTE_label
+  parameters:
+    affinity: ''
+    alias: ''
+    cellalignment: '2'
+    comment: ''
+    gui_hint: (5,3,1,1)
+    label: '""'
+    verticalalignment: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [776, 484.0]
+    rotation: 0
+    state: enabled
+- name: CH6_Call
+  id: PSCR_LMR2LTE_led
+  parameters:
+    affinity: ''
+    alias: ''
+    cellalignment: '1'
+    color: transparent
+    comment: ''
+    gui_hint: 5,1,1,1
+    label: ''
+    maxSize: '40'
+    position: '1'
+    verticalalignment: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [472, 484.0]
+    rotation: 0
+    state: enabled
+- name: CH6_Floor
+  id: PSCR_LMR2LTE_led
+  parameters:
+    affinity: ''
+    alias: ''
+    cellalignment: '1'
+    color: transparent
+    comment: ''
+    gui_hint: 5,2,1,1
+    label: ''
+    maxSize: '40'
+    position: '1'
+    verticalalignment: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [616, 484.0]
+    rotation: 0
+    state: enabled
+- name: CH6_Reg
+  id: PSCR_LMR2LTE_led
+  parameters:
+    affinity: ''
+    alias: ''
+    cellalignment: '2'
+    color: transparent
+    comment: ''
+    gui_hint: 5,0,1,1
+    label: ''
+    maxSize: '40'
+    position: '1'
+    verticalalignment: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [312, 484.0]
+    rotation: 0
+    state: enabled
+- name: CH7
+  id: PSCR_LMR2LTE_label
+  parameters:
+    affinity: ''
+    alias: ''
+    cellalignment: '2'
+    comment: ''
+    gui_hint: (6,3,1,1)
+    label: '""'
+    verticalalignment: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [776, 540.0]
+    rotation: 0
+    state: enabled
+- name: CH7_Call
+  id: PSCR_LMR2LTE_led
+  parameters:
+    affinity: ''
+    alias: ''
+    cellalignment: '1'
+    color: transparent
+    comment: ''
+    gui_hint: 6,1,1,1
+    label: ''
+    maxSize: '40'
+    position: '1'
+    verticalalignment: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [472, 540.0]
+    rotation: 0
+    state: enabled
+- name: CH7_Floor
+  id: PSCR_LMR2LTE_led
+  parameters:
+    affinity: ''
+    alias: ''
+    cellalignment: '1'
+    color: transparent
+    comment: ''
+    gui_hint: 6,2,1,1
+    label: ''
+    maxSize: '40'
+    position: '1'
+    verticalalignment: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [616, 540.0]
+    rotation: 0
+    state: enabled
+- name: CH7_Reg
+  id: PSCR_LMR2LTE_led
+  parameters:
+    affinity: ''
+    alias: ''
+    cellalignment: '2'
+    color: transparent
+    comment: ''
+    gui_hint: 6,0,1,1
+    label: ''
+    maxSize: '40'
+    position: '1'
+    verticalalignment: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [312, 540.0]
+    rotation: 0
+    state: enabled
+- name: CH8
+  id: PSCR_LMR2LTE_label
+  parameters:
+    affinity: ''
+    alias: ''
+    cellalignment: '2'
+    comment: ''
+    gui_hint: (7,3,1,1)
+    label: '""'
+    verticalalignment: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [776, 596.0]
+    rotation: 0
+    state: enabled
+- name: CH8_Call
+  id: PSCR_LMR2LTE_led
+  parameters:
+    affinity: ''
+    alias: ''
+    cellalignment: '1'
+    color: transparent
+    comment: ''
+    gui_hint: 7,1,1,1
+    label: ''
+    maxSize: '40'
+    position: '1'
+    verticalalignment: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [472, 596.0]
+    rotation: 0
+    state: enabled
+- name: CH8_Floor
+  id: PSCR_LMR2LTE_led
+  parameters:
+    affinity: ''
+    alias: ''
+    cellalignment: '1'
+    color: transparent
+    comment: ''
+    gui_hint: 7,2,1,1
+    label: ''
+    maxSize: '40'
+    position: '1'
+    verticalalignment: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [616, 596.0]
+    rotation: 0
+    state: enabled
+- name: CH8_Reg
+  id: PSCR_LMR2LTE_led
+  parameters:
+    affinity: ''
+    alias: ''
+    cellalignment: '2'
+    color: transparent
+    comment: ''
+    gui_hint: 7,0,1,1
+    label: ''
+    maxSize: '40'
+    position: '1'
+    verticalalignment: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [312, 596.0]
+    rotation: 0
+    state: enabled
+- name: import_0
+  id: import
+  parameters:
+    alias: ''
+    comment: 'Due to a bug in gnuradio this import block is needed
+
+      https://github.com/gnuradio/gnuradio/issues/4431'
+    imports: from PyQt5 import Qt
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [24, 107]
+    rotation: 0
+    state: true
+- name: pad_source_0
+  id: pad_source
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    label: msg in
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    num_streams: '1'
+    optional: 'False'
+    type: message
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [56, 412.0]
+    rotation: 0
+    state: true
+
+connections:
+- [pad_source_0, out, CH1, label]
+- [pad_source_0, out, CH1_Call, color]
+- [pad_source_0, out, CH1_Floor, color]
+- [pad_source_0, out, CH1_Reg, color]
+- [pad_source_0, out, CH2, label]
+- [pad_source_0, out, CH2_Call, color]
+- [pad_source_0, out, CH2_Floor, color]
+- [pad_source_0, out, CH2_Reg, color]
+- [pad_source_0, out, CH3, label]
+- [pad_source_0, out, CH3_Call, color]
+- [pad_source_0, out, CH3_Floor, color]
+- [pad_source_0, out, CH3_Reg, color]
+- [pad_source_0, out, CH4, label]
+- [pad_source_0, out, CH4_Call, color]
+- [pad_source_0, out, CH4_Floor, color]
+- [pad_source_0, out, CH4_Reg, color]
+- [pad_source_0, out, CH5, label]
+- [pad_source_0, out, CH5_Call, color]
+- [pad_source_0, out, CH5_Floor, color]
+- [pad_source_0, out, CH5_Reg, color]
+- [pad_source_0, out, CH6, label]
+- [pad_source_0, out, CH6_Call, color]
+- [pad_source_0, out, CH6_Floor, color]
+- [pad_source_0, out, CH6_Reg, color]
+- [pad_source_0, out, CH7, label]
+- [pad_source_0, out, CH7_Call, color]
+- [pad_source_0, out, CH7_Floor, color]
+- [pad_source_0, out, CH7_Reg, color]
+- [pad_source_0, out, CH8, label]
+- [pad_source_0, out, CH8_Call, color]
+- [pad_source_0, out, CH8_Floor, color]
+- [pad_source_0, out, CH8_Reg, color]
+
+metadata:
+  file_format: 1

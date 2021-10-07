@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespacegr_1_1PSCR__LMR2LTE" kind="namespace" language="C++">
+    <compoundname>gr::PSCR_LMR2LTE</compoundname>
+    <innerclass refid="classgr_1_1PSCR__LMR2LTE_1_1opus__rtp__sink" prot="public">gr::PSCR_LMR2LTE::opus_rtp_sink</innerclass>
+    <innerclass refid="classgr_1_1PSCR__LMR2LTE_1_1opus__rtp__sink__impl" prot="public">gr::PSCR_LMR2LTE::opus_rtp_sink_impl</innerclass>
+    <innerclass refid="classgr_1_1PSCR__LMR2LTE_1_1opus__rtp__source" prot="public">gr::PSCR_LMR2LTE::opus_rtp_source</innerclass>
+    <innerclass refid="classgr_1_1PSCR__LMR2LTE_1_1opus__rtp__source__impl" prot="public">gr::PSCR_LMR2LTE::opus_rtp_source_impl</innerclass>
+    <innerclass refid="classgr_1_1PSCR__LMR2LTE_1_1pjsua2Account" prot="public">gr::PSCR_LMR2LTE::pjsua2Account</innerclass>
+    <innerclass refid="classgr_1_1PSCR__LMR2LTE_1_1pjsua2Call" prot="public">gr::PSCR_LMR2LTE::pjsua2Call</innerclass>
+    <innerclass refid="structgr_1_1PSCR__LMR2LTE_1_1RFchannel" prot="public">gr::PSCR_LMR2LTE::RFchannel</innerclass>
+    <innerclass refid="classgr_1_1PSCR__LMR2LTE_1_1sip__signaling" prot="public">gr::PSCR_LMR2LTE::sip_signaling</innerclass>
+    <innerclass refid="classgr_1_1PSCR__LMR2LTE_1_1sip__signaling__impl" prot="public">gr::PSCR_LMR2LTE::sip_signaling_impl</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/include/PSCR_LMR2LTE/opus_rtp_sink.h" line="28" column="24"/>
+  </compounddef>
+</doxygen>

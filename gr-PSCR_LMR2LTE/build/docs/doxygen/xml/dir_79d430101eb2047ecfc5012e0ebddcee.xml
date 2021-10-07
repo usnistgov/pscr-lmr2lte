@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_79d430101eb2047ecfc5012e0ebddcee" kind="dir">
+    <compoundname>PSCR_LMR2LTE</compoundname>
+    <innerfile refid="api_8h">api.h</innerfile>
+    <innerfile refid="opus__rtp__sink_8h">opus_rtp_sink.h</innerfile>
+    <innerfile refid="opus__rtp__source_8h">opus_rtp_source.h</innerfile>
+    <innerfile refid="packet__headers_8h">packet_headers.h</innerfile>
+    <innerfile refid="sip__signaling_8h">sip_signaling.h</innerfile>
+    <innerfile refid="udp__header__types_8h">udp_header_types.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/include/PSCR_LMR2LTE/"/>
+  </compounddef>
+</doxygen>

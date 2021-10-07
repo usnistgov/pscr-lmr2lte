@@ -1,0 +1,1461 @@
+options:
+  parameters:
+    author: ''
+    category: '[GRC Hier Blocks]'
+    cmake_opt: ''
+    comment: ''
+    copyright: ''
+    description: ''
+    gen_cmake: 'On'
+    gen_linking: dynamic
+    generate_options: hb
+    hier_block_src_path: '.:'
+    id: xcvr_array
+    max_nouts: '0'
+    output_language: python
+    placement: (0,0)
+    qt_qss_theme: ''
+    realtime_scheduling: ''
+    run: 'True'
+    run_command: '{python} -u {filename}'
+    run_options: prompt
+    sizing_mode: fixed
+    thread_safe_setters: ''
+    title: NBFM Transceiver Array
+    window_size: ''
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [196, 27]
+    rotation: 0
+    state: enabled
+
+blocks:
+- name: SIPuser1
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: Chan 1 SIP user name
+    short_id: ''
+    type: str
+    value: '""'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [389, 686]
+    rotation: 0
+    state: true
+- name: SIPpw1
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: Chan 1 SIP password
+    short_id: ''
+    type: str
+    value: '""'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [416, 777]
+    rotation: 0
+    state: true
+- name: SIPuri1
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: Chan 1 SIP URI to call
+    short_id: ''
+    type: str
+    value: '""'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [381, 866]
+    rotation: 0
+    state: true
+- name: RxOffset_1
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: Chan 1 Rx Offset (Hz)
+    short_id: ''
+    type: eng_float
+    value: '0'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [10, 149]
+    rotation: 0
+    state: true
+- name: TxOffset_1
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: Chan 1 Tx Offset (Hz)
+    short_id: ''
+    type: eng_float
+    value: '0'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1795, 130]
+    rotation: 0
+    state: true
+- name: ctcss_1
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: Chan 1 CTCSS Freq (Hz)
+    short_id: ''
+    type: eng_float
+    value: '179.9'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [178, 152]
+    rotation: 0
+    state: true
+- name: SIPuser2
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: Chan 2 SIP user name
+    short_id: ''
+    type: str
+    value: '""'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [551, 686]
+    rotation: 0
+    state: true
+- name: SIPpw2
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: Chan 2 SIP password
+    short_id: ''
+    type: str
+    value: '""'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [571, 777]
+    rotation: 0
+    state: true
+- name: SIPuri2
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: Chan 2 SIP URI to call
+    short_id: ''
+    type: str
+    value: '""'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [543, 866]
+    rotation: 0
+    state: true
+- name: RxOffset_2
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: Chan 2 Rx Offset (Hz)
+    short_id: ''
+    type: eng_float
+    value: '0'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [10, 238]
+    rotation: 0
+    state: true
+- name: TxOffset_2
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: Chan 2 Tx Offset (Hz)
+    short_id: ''
+    type: eng_float
+    value: '0'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1795, 218]
+    rotation: 0
+    state: true
+- name: ctcss_2
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: Chan 2 CTCSS Freq (Hz)
+    short_id: ''
+    type: eng_float
+    value: '69.3'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [178, 241]
+    rotation: 0
+    state: true
+- name: SIPuser3
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: Chan 3 SIP user name
+    short_id: ''
+    type: str
+    value: '""'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [714, 686]
+    rotation: 0
+    state: true
+- name: SIPpw3
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: Chan 3 SIP password
+    short_id: ''
+    type: str
+    value: '""'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [727, 777]
+    rotation: 0
+    state: true
+- name: SIPuri3
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: Chan 3 SIP URI to call
+    short_id: ''
+    type: str
+    value: '""'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [705, 866]
+    rotation: 0
+    state: true
+- name: RxOffset_3
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: Chan 3 Rx Offset (Hz)
+    short_id: ''
+    type: eng_float
+    value: '0'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [10, 325]
+    rotation: 0
+    state: true
+- name: TxOffset_3
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: Chan 3 Tx Offset (Hz)
+    short_id: ''
+    type: eng_float
+    value: '0'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1795, 305]
+    rotation: 0
+    state: true
+- name: ctcss_3
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: Chan 3 CTCSS Freq (Hz)
+    short_id: ''
+    type: eng_float
+    value: '71.9'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [178, 330]
+    rotation: 0
+    state: true
+- name: SIPuser4
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: Chan 4 SIP user name
+    short_id: ''
+    type: str
+    value: '""'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [876, 686]
+    rotation: 0
+    state: true
+- name: SIPpw4
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: Chan 4 SIP password
+    short_id: ''
+    type: str
+    value: '""'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [882, 777]
+    rotation: 0
+    state: true
+- name: SIPuri4
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: Chan 4 SIP URI to call
+    short_id: ''
+    type: str
+    value: '""'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [867, 866]
+    rotation: 0
+    state: true
+- name: RxOffset_4
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: Chan 4 Rx Offset (Hz)
+    short_id: ''
+    type: eng_float
+    value: '0'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [10, 415]
+    rotation: 0
+    state: true
+- name: TxOffset_4
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: Chan 4 Tx Offset (Hz)
+    short_id: ''
+    type: eng_float
+    value: '0'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1795, 395]
+    rotation: 0
+    state: true
+- name: ctcss_4
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: Chan 4 CTCSS Freq (Hz)
+    short_id: ''
+    type: eng_float
+    value: '100'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [178, 417]
+    rotation: 0
+    state: true
+- name: SIPuser5
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: Chan 5 SIP user name
+    short_id: ''
+    type: str
+    value: '""'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1039, 686]
+    rotation: 0
+    state: true
+- name: SIPpw5
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: Chan 5 SIP password
+    short_id: ''
+    type: str
+    value: '""'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1036, 777]
+    rotation: 0
+    state: true
+- name: SIPuri5
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: Chan 5 SIP URI to call
+    short_id: ''
+    type: str
+    value: '""'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1028, 866]
+    rotation: 0
+    state: true
+- name: RxOffset_5
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: Chan 5 Rx Offset (Hz)
+    short_id: ''
+    type: eng_float
+    value: '0'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [10, 506]
+    rotation: 0
+    state: true
+- name: TxOffset_5
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: Chan 5 Tx Offset (Hz)
+    short_id: ''
+    type: eng_float
+    value: '0'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1795, 486]
+    rotation: 0
+    state: true
+- name: ctcss_5
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: Chan 5 CTCSS Freq (Hz)
+    short_id: ''
+    type: eng_float
+    value: '179.9'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [178, 506]
+    rotation: 0
+    state: true
+- name: SIPuser6
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: Chan 6 SIP user name
+    short_id: ''
+    type: str
+    value: '""'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1201, 686]
+    rotation: 0
+    state: true
+- name: SIPpw6
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: Chan 6 SIP password
+    short_id: ''
+    type: str
+    value: '""'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1191, 777]
+    rotation: 0
+    state: true
+- name: SIPuri6
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: Chan 6 SIP URI to call
+    short_id: ''
+    type: str
+    value: '""'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1190, 866]
+    rotation: 0
+    state: true
+- name: RxOffset_6
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: Chan 6 Rx Offset (Hz)
+    short_id: ''
+    type: eng_float
+    value: '0'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [10, 595]
+    rotation: 0
+    state: true
+- name: TxOffset_6
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: Chan 6 Tx Offset (Hz)
+    short_id: ''
+    type: eng_float
+    value: '0'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1795, 575]
+    rotation: 0
+    state: true
+- name: ctcss_6
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: Chan 6 CTCSS Freq (Hz)
+    short_id: ''
+    type: eng_float
+    value: '241.8'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [178, 594]
+    rotation: 0
+    state: true
+- name: SIPuser7
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: Chan 7 SIP user name
+    short_id: ''
+    type: str
+    value: '""'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1364, 686]
+    rotation: 0
+    state: true
+- name: SIPpw7
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: Chan 7 SIP password
+    short_id: ''
+    type: str
+    value: '""'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1347, 777]
+    rotation: 0
+    state: true
+- name: SIPuri7
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: Chan 7 SIP URI to call
+    short_id: ''
+    type: str
+    value: '""'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1352, 866]
+    rotation: 0
+    state: true
+- name: RxOffset_7
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: Chan 7 Rx Offset (Hz)
+    short_id: ''
+    type: eng_float
+    value: '0'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [10, 682]
+    rotation: 0
+    state: true
+- name: TxOffset_7
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: Chan 7 Tx Offset (Hz)
+    short_id: ''
+    type: eng_float
+    value: '0'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1795, 662]
+    rotation: 0
+    state: true
+- name: ctcss_7
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: Chan 7 CTCSS Freq (Hz)
+    short_id: ''
+    type: eng_float
+    value: '250.3'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [178, 683]
+    rotation: 0
+    state: true
+- name: SIPuser8
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: Chan 8 SIP user name
+    short_id: ''
+    type: str
+    value: '""'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1526, 686]
+    rotation: 0
+    state: true
+- name: SIPpw8
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: Chan 8 SIP password
+    short_id: ''
+    type: str
+    value: '""'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1502, 777]
+    rotation: 0
+    state: true
+- name: SIPuri8
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: Chan 8 SIP URI to call
+    short_id: ''
+    type: str
+    value: '""'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1514, 866]
+    rotation: 0
+    state: true
+- name: RxOffset_8
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: Chan 8 Rx Offset (Hz)
+    short_id: ''
+    type: eng_float
+    value: '0'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [10, 772]
+    rotation: 0
+    state: true
+- name: TxOffset_8
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: Chan 8 Tx Offset (Hz)
+    short_id: ''
+    type: eng_float
+    value: '0'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1795, 752]
+    rotation: 0
+    state: true
+- name: ctcss_8
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: Chan 8 CTCSS Freq (Hz)
+    short_id: ''
+    type: eng_float
+    value: '254.1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [178, 773]
+    rotation: 0
+    state: true
+- name: aud_to_rf
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: Sample Rate to Audio Rate ratio
+    short_id: ''
+    type: intx
+    value: '21'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [381, 27]
+    rotation: 0
+    state: true
+- name: audio_samp_rate
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: Audio Sample Rate
+    short_id: ''
+    type: intx
+    value: '48000'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [561, 27]
+    rotation: 0
+    state: true
+- name: squelch
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: Squelch Level (dB)
+    short_id: ''
+    type: eng_float
+    value: '-40'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [932, 27]
+    rotation: 0
+    state: true
+- name: Max_deviation
+  id: parameter
+  parameters:
+    alias: ''
+    comment: ''
+    hide: part
+    label: Maximum Deviation (Hz)
+    short_id: ''
+    type: eng_float
+    value: '2500'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [747, 27]
+    rotation: 0
+    state: true
+- name: NBFMreceive_1
+  id: NBFMreceive
+  parameters:
+    Max_deviation: Max_deviation
+    RxOffset: RxOffset_1
+    SIPpw: SIPpw1
+    SIPuri: SIPuri1
+    SIPuser: SIPuser1
+    affinity: ''
+    alias: '"1"'
+    aud_to_rf: aud_to_rf
+    audio_samp_rate: audio_samp_rate
+    comment: ''
+    ctcss: ctcss_1
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    squelch: squelch
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [713, 154]
+    rotation: 0
+    state: enabled
+- name: NBFMreceive_2
+  id: NBFMreceive
+  parameters:
+    Max_deviation: Max_deviation
+    RxOffset: RxOffset_2
+    SIPpw: SIPpw2
+    SIPuri: SIPuri2
+    SIPuser: SIPuser2
+    affinity: ''
+    alias: ''
+    aud_to_rf: aud_to_rf
+    audio_samp_rate: audio_samp_rate
+    comment: ''
+    ctcss: ctcss_2
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    squelch: squelch
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [713, 219]
+    rotation: 0
+    state: enabled
+- name: NBFMreceive_3
+  id: NBFMreceive
+  parameters:
+    Max_deviation: Max_deviation
+    RxOffset: RxOffset_3
+    SIPpw: SIPpw3
+    SIPuri: SIPuri3
+    SIPuser: SIPuser3
+    affinity: ''
+    alias: ''
+    aud_to_rf: aud_to_rf
+    audio_samp_rate: audio_samp_rate
+    comment: ''
+    ctcss: ctcss_3
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    squelch: squelch
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [713, 284]
+    rotation: 0
+    state: enabled
+- name: NBFMreceive_4
+  id: NBFMreceive
+  parameters:
+    Max_deviation: Max_deviation
+    RxOffset: RxOffset_4
+    SIPpw: SIPpw4
+    SIPuri: SIPuri4
+    SIPuser: SIPuser4
+    affinity: ''
+    alias: ''
+    aud_to_rf: aud_to_rf
+    audio_samp_rate: audio_samp_rate
+    comment: ''
+    ctcss: ctcss_4
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    squelch: squelch
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [713, 348]
+    rotation: 0
+    state: enabled
+- name: NBFMreceive_5
+  id: NBFMreceive
+  parameters:
+    Max_deviation: Max_deviation
+    RxOffset: RxOffset_5
+    SIPpw: SIPpw5
+    SIPuri: SIPuri5
+    SIPuser: SIPuser5
+    affinity: ''
+    alias: ''
+    aud_to_rf: aud_to_rf
+    audio_samp_rate: audio_samp_rate
+    comment: ''
+    ctcss: ctcss_5
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    squelch: squelch
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [712, 413]
+    rotation: 0
+    state: enabled
+- name: NBFMreceive_6
+  id: NBFMreceive
+  parameters:
+    Max_deviation: Max_deviation
+    RxOffset: RxOffset_6
+    SIPpw: SIPpw6
+    SIPuri: SIPuri6
+    SIPuser: SIPuser6
+    affinity: ''
+    alias: ''
+    aud_to_rf: aud_to_rf
+    audio_samp_rate: audio_samp_rate
+    comment: ''
+    ctcss: ctcss_6
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    squelch: squelch
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [713, 480]
+    rotation: 0
+    state: enabled
+- name: NBFMreceive_7
+  id: NBFMreceive
+  parameters:
+    Max_deviation: Max_deviation
+    RxOffset: RxOffset_7
+    SIPpw: SIPpw7
+    SIPuri: SIPuri7
+    SIPuser: SIPuser7
+    affinity: ''
+    alias: ''
+    aud_to_rf: aud_to_rf
+    audio_samp_rate: audio_samp_rate
+    comment: ''
+    ctcss: ctcss_7
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    squelch: squelch
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [713, 544]
+    rotation: 0
+    state: enabled
+- name: NBFMreceive_8
+  id: NBFMreceive
+  parameters:
+    Max_deviation: Max_deviation
+    RxOffset: RxOffset_8
+    SIPpw: SIPpw8
+    SIPuri: SIPuri8
+    SIPuser: SIPuser8
+    affinity: ''
+    alias: ''
+    aud_to_rf: aud_to_rf
+    audio_samp_rate: audio_samp_rate
+    comment: ''
+    ctcss: ctcss_8
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    squelch: squelch
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [713, 607]
+    rotation: 0
+    state: enabled
+- name: NBFMtransmit_1
+  id: NBFMtransmit
+  parameters:
+    Max_deviation: Max_deviation
+    SIPpw: SIPpw1
+    SIPuri: SIPuri1
+    SIPuser: SIPuser1
+    TxOffset: TxOffset_1
+    affinity: ''
+    alias: ''
+    aud_to_rf: aud_to_rf
+    audio_samp_rate: audio_samp_rate
+    comment: ''
+    ctcss: ctcss_1
+    maxoutbuf: '0'
+    minoutbuf: '0'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1143, 151]
+    rotation: 0
+    state: enabled
+- name: NBFMtransmit_2
+  id: NBFMtransmit
+  parameters:
+    Max_deviation: Max_deviation
+    SIPpw: SIPpw2
+    SIPuri: SIPuri2
+    SIPuser: SIPuser2
+    TxOffset: TxOffset_2
+    affinity: ''
+    alias: ''
+    aud_to_rf: aud_to_rf
+    audio_samp_rate: audio_samp_rate
+    comment: ''
+    ctcss: ctcss_2
+    maxoutbuf: '0'
+    minoutbuf: '0'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1142, 216]
+    rotation: 0
+    state: enabled
+- name: NBFMtransmit_3
+  id: NBFMtransmit
+  parameters:
+    Max_deviation: Max_deviation
+    SIPpw: SIPpw3
+    SIPuri: SIPuri3
+    SIPuser: SIPuser3
+    TxOffset: TxOffset_3
+    affinity: ''
+    alias: ''
+    aud_to_rf: aud_to_rf
+    audio_samp_rate: audio_samp_rate
+    comment: ''
+    ctcss: ctcss_3
+    maxoutbuf: '0'
+    minoutbuf: '0'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1143, 280]
+    rotation: 0
+    state: enabled
+- name: NBFMtransmit_4
+  id: NBFMtransmit
+  parameters:
+    Max_deviation: Max_deviation
+    SIPpw: SIPpw4
+    SIPuri: SIPuri4
+    SIPuser: SIPuser4
+    TxOffset: TxOffset_4
+    affinity: ''
+    alias: ''
+    aud_to_rf: aud_to_rf
+    audio_samp_rate: audio_samp_rate
+    comment: ''
+    ctcss: ctcss_4
+    maxoutbuf: '0'
+    minoutbuf: '0'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1142, 345]
+    rotation: 0
+    state: enabled
+- name: NBFMtransmit_5
+  id: NBFMtransmit
+  parameters:
+    Max_deviation: Max_deviation
+    SIPpw: SIPpw5
+    SIPuri: SIPuri5
+    SIPuser: SIPuser5
+    TxOffset: TxOffset_5
+    affinity: ''
+    alias: ''
+    aud_to_rf: aud_to_rf
+    audio_samp_rate: audio_samp_rate
+    comment: ''
+    ctcss: ctcss_5
+    maxoutbuf: '0'
+    minoutbuf: '0'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1143, 410]
+    rotation: 0
+    state: enabled
+- name: NBFMtransmit_6
+  id: NBFMtransmit
+  parameters:
+    Max_deviation: Max_deviation
+    SIPpw: SIPpw6
+    SIPuri: SIPuri6
+    SIPuser: SIPuser6
+    TxOffset: TxOffset_6
+    affinity: ''
+    alias: ''
+    aud_to_rf: aud_to_rf
+    audio_samp_rate: audio_samp_rate
+    comment: ''
+    ctcss: ctcss_6
+    maxoutbuf: '0'
+    minoutbuf: '0'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1143, 475]
+    rotation: 0
+    state: enabled
+- name: NBFMtransmit_7
+  id: NBFMtransmit
+  parameters:
+    Max_deviation: Max_deviation
+    SIPpw: SIPpw7
+    SIPuri: SIPuri7
+    SIPuser: SIPuser7
+    TxOffset: TxOffset_7
+    affinity: ''
+    alias: ''
+    aud_to_rf: aud_to_rf
+    audio_samp_rate: audio_samp_rate
+    comment: ''
+    ctcss: ctcss_7
+    maxoutbuf: '0'
+    minoutbuf: '0'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1143, 542]
+    rotation: 0
+    state: enabled
+- name: NBFMtransmit_8
+  id: NBFMtransmit
+  parameters:
+    Max_deviation: Max_deviation
+    SIPpw: SIPpw8
+    SIPuri: SIPuri8
+    SIPuser: SIPuser8
+    TxOffset: TxOffset_8
+    affinity: ''
+    alias: ''
+    aud_to_rf: aud_to_rf
+    audio_samp_rate: audio_samp_rate
+    comment: ''
+    ctcss: ctcss_8
+    maxoutbuf: '0'
+    minoutbuf: '0'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1143, 604]
+    rotation: 0
+    state: enabled
+- name: add
+  id: blocks_add_xx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    num_inputs: '8'
+    type: complex
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1569, 149]
+    rotation: 0
+    state: enabled
+- name: pad_sink_0
+  id: pad_sink
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    label: MSG_out
+    num_streams: '1'
+    optional: 'False'
+    type: message
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1604, 540]
+    rotation: 0
+    state: true
+- name: pad_sink_1
+  id: pad_sink
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    label: out
+    num_streams: '1'
+    optional: 'False'
+    type: complex
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1685, 249]
+    rotation: 0
+    state: enabled
+- name: pad_sink_2
+  id: pad_sink
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    label: demod out
+    num_streams: '1'
+    optional: 'True'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1006, 127]
+    rotation: 0
+    state: true
+- name: pad_source_0
+  id: pad_source
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    label: RF_in
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    num_streams: '1'
+    optional: 'False'
+    type: complex
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [360, 154]
+    rotation: 0
+    state: enabled
+- name: pad_source_1
+  id: pad_source
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    label: CMD_in
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    num_streams: '1'
+    optional: 'False'
+    type: message
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [355, 572]
+    rotation: 0
+    state: true
+
+connections:
+- [NBFMreceive_1, '0', pad_sink_2, '0']
+- [NBFMreceive_1, msg out, pad_sink_0, in]
+- [NBFMreceive_2, msg out, pad_sink_0, in]
+- [NBFMreceive_3, msg out, pad_sink_0, in]
+- [NBFMreceive_4, msg out, pad_sink_0, in]
+- [NBFMreceive_5, msg out, pad_sink_0, in]
+- [NBFMreceive_6, msg out, pad_sink_0, in]
+- [NBFMreceive_7, msg out, pad_sink_0, in]
+- [NBFMreceive_8, msg out, pad_sink_0, in]
+- [NBFMtransmit_1, '0', add, '0']
+- [NBFMtransmit_1, msg out, pad_sink_0, in]
+- [NBFMtransmit_2, '0', add, '1']
+- [NBFMtransmit_2, msg out, pad_sink_0, in]
+- [NBFMtransmit_3, '0', add, '2']
+- [NBFMtransmit_3, msg out, pad_sink_0, in]
+- [NBFMtransmit_4, '0', add, '3']
+- [NBFMtransmit_4, msg out, pad_sink_0, in]
+- [NBFMtransmit_5, '0', add, '4']
+- [NBFMtransmit_5, msg out, pad_sink_0, in]
+- [NBFMtransmit_6, '0', add, '5']
+- [NBFMtransmit_6, msg out, pad_sink_0, in]
+- [NBFMtransmit_7, '0', add, '6']
+- [NBFMtransmit_7, msg out, pad_sink_0, in]
+- [NBFMtransmit_8, '0', add, '7']
+- [NBFMtransmit_8, msg out, pad_sink_0, in]
+- [add, '0', pad_sink_1, '0']
+- [pad_source_0, '0', NBFMreceive_1, '0']
+- [pad_source_0, '0', NBFMreceive_2, '0']
+- [pad_source_0, '0', NBFMreceive_3, '0']
+- [pad_source_0, '0', NBFMreceive_4, '0']
+- [pad_source_0, '0', NBFMreceive_5, '0']
+- [pad_source_0, '0', NBFMreceive_6, '0']
+- [pad_source_0, '0', NBFMreceive_7, '0']
+- [pad_source_0, '0', NBFMreceive_8, '0']
+- [pad_source_1, out, NBFMreceive_1, msg in]
+- [pad_source_1, out, NBFMreceive_2, msg in]
+- [pad_source_1, out, NBFMreceive_3, msg in]
+- [pad_source_1, out, NBFMreceive_4, msg in]
+- [pad_source_1, out, NBFMreceive_5, msg in]
+- [pad_source_1, out, NBFMreceive_6, msg in]
+- [pad_source_1, out, NBFMreceive_7, msg in]
+- [pad_source_1, out, NBFMreceive_8, msg in]
+- [pad_source_1, out, NBFMtransmit_1, msg in]
+- [pad_source_1, out, NBFMtransmit_2, msg in]
+- [pad_source_1, out, NBFMtransmit_3, msg in]
+- [pad_source_1, out, NBFMtransmit_4, msg in]
+- [pad_source_1, out, NBFMtransmit_5, msg in]
+- [pad_source_1, out, NBFMtransmit_6, msg in]
+- [pad_source_1, out, NBFMtransmit_7, msg in]
+- [pad_source_1, out, NBFMtransmit_8, msg in]
+
+metadata:
+  file_format: 1

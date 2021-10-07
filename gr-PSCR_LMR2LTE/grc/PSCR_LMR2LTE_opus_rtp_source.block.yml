@@ -1,0 +1,102 @@
+id: PSCR_LMR2LTE_opus_rtp_source
+label: opus_rtp_source
+category: '[PSCR_LMR2LTE]'
+
+templates:
+  imports: import PSCR_LMR2LTE
+  make: |-
+    PSCR_LMR2LTE.opus_rtp_source(${port}, ${samprate}, ${ipv6})
+    self.${id}.set_chan(${tx_freq_offset}, ${SIP_user}, ${SIP_pw}, ${uri})
+
+#  Make one 'parameters' list entry for every parameter you want settable from the GUI.
+#     Keys include:
+#     * id (makes the value accessible as \$keyname, e.g. in the make entry)
+#     * label (label shown in the GUI)
+#     * dtype (e.g. int, float, complex, byte, short, xxx_vector, ...)
+parameters:
+-   id: port
+    label: Destination Port
+    dtype: int
+    default: '16384'
+-   id: samprate
+    label: Sample Rate
+    dtype: int
+    default: '48000'
+-   id: ipv6
+    label: Enable IPv6 Support
+    dtype: enum
+    options: ['False', 'True']
+    option_labels: ['No', 'Yes']
+
+-   id: tx_freq_offset
+    label: Tx Frequency Offset
+    default: 0
+    dtype: float
+    hide: part
+    category: Channel
+-   id: SIP_user
+    label: SIP User Name
+    default: '""'
+    dtype: string
+    hide: part
+    category: Channel
+-   id: SIP_pw
+    label: SIP Password
+    default: '""'
+    dtype: string
+    hide: part
+    category: Channel
+-   id: uri
+    label: URI to call
+    default: '""'
+    dtype: string
+    hide: part
+    category: Channel
+#  Make one 'inputs' list entry per input and one 'outputs' list entry per output.
+#  Keys include:
+#      * label (an identifier for the GUI)
+#      * domain (optional - stream or message. Default is stream)
+#      * dtype (e.g. int, float, complex, byte, short, xxx_vector, ...)
+#      * vlen (optional - data stream vector length. Default is 1)
+#      * optional (optional - set to 1 for optional inputs. Default is 0)
+inputs:
+-   domain: message
+    id: command
+    optional: true
+
+outputs:
+-   domain: stream
+    dtype: float
+-   id: cmd out
+    domain: message
+    optional: true
+
+asserts:
+- ${ port >= 0 }
+- ${ port < 65536 }
+- ${ samprate == 8000 or samprate == 12000 or samprate == 16000 or samprate == 24000 or samprate == 48000 }
+
+documentation: "This block provides opus decoding RTP transmission capabilities.\n\n\
+    \ Takes opus encoded samples from an IP port and sends a float audio stream.\n\
+    \ The sample rate must be one of 8000, 12000, 160000, 24000 or 48000.\n\n\
+    \ The command port takes a PMT dict with the following pairs:\n\
+    \ \"ID\", number which must match the unique_id() of the block (required)\n\
+    \ \"local port\", port number on local host for IP packets\n\
+    \ \"pt\", payload type for RTP packest\n\
+    \ \"freq offset\", value in Hz which is output from freq.  Intended to be sent to\
+    \ an analog signal sourceblock cmd port\n\
+    \ If the command port receives a PMT symbol it will trigger the cmd out port. \n\n\
+    \ The cmd out port outputs the unique_id() of the block when\
+    \ triggered by a command.\n\ 
+    \ NOTES:\n\
+    \ NOTE:\n\
+    \ For best performance and to ensure UDP packets are not dropped, add the following\
+    \ lines to your /etc/sysctl.conf and reboot (the reboot is required).\n\n\
+    \ net.core.rmem_default=26214400\n\
+    \ net.core.rmem_max=104857600\n\
+    \ net.core.wmem_default=65536\n\
+    \ net.core.wmem_max=104857600"
+
+#  'file_format' specifies the version of the GRC yml format used in the file
+#  and should usually not be changed.
+file_format: 1

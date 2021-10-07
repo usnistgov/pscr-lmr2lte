@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="sip__signaling_8h" kind="file" language="C++">
+    <compoundname>sip_signaling.h</compoundname>
+    <includes refid="api_8h" local="no">PSCR_LMR2LTE/api.h</includes>
+    <includes local="no">gnuradio/block.h</includes>
+    <includedby refid="sip__signaling__impl_8h" local="no">sip_signaling_impl.h</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>gnuradio/attributes.h</label>
+      </node>
+      <node id="1">
+        <label>sip_signaling.h</label>
+        <link refid="sip__signaling_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>gnuradio/block.h</label>
+      </node>
+      <node id="2">
+        <label>PSCR_LMR2LTE/api.h</label>
+        <link refid="api_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>sip_signaling.h</label>
+        <link refid="sip__signaling_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>sip_signaling_impl.h</label>
+        <link refid="sip__signaling__impl_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classgr_1_1PSCR__LMR2LTE_1_1sip__signaling" prot="public">gr::PSCR_LMR2LTE::sip_signaling</innerclass>
+    <innernamespace refid="namespacegr">gr</innernamespace>
+    <innernamespace refid="namespacegr_1_1PSCR__LMR2LTE">gr::PSCR_LMR2LTE</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/jonc/lmr2lte/gnuradio/gr-PSCR_LMR2LTE/include/PSCR_LMR2LTE/sip_signaling.h"/>
+  </compounddef>
+</doxygen>
